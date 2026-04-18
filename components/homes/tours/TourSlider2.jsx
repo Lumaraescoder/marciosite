@@ -130,10 +130,6 @@ export default function TourSlider2() {
                             className="img-ratio"
                           />
                         </div>
-
-                        <button className="tourCard__favorite">
-                          <i className="icon-heart"></i>
-                        </button>
                       </div>
 
                       <div className="tourCard__content px-20 py-10">

@@ -128,19 +128,7 @@ function FooterTwoContent() {
                   >
                     {t("destinations")}
                   </button>
-                  <button
-                    onClick={() => scrollToSection("testimonials-section")}
-                    style={{
-                      color: "white",
-                      background: "none",
-                      border: "none",
-                      cursor: "pointer",
-                      textAlign: "left",
-                      padding: "5px 0",
-                    }}
-                  >
-                    {t("testimonials")}
-                  </button>
+
                   <Link
                     href="/contact"
                     style={{
@@ -169,15 +157,6 @@ function FooterTwoContent() {
           <div className="row y-gap-5 justify-between items-center">
             <div className="col-auto text-white">
               <div>
-                <span>{t("footer_made_by")} </span>
-                <a
-                  href="https://www.arcanadigital.pt"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-accent-1"
-                >
-                  Arcana Digital
-                </a>{" "}
                 © {new Date().getFullYear()} - {t("footer_copyright")}
               </div>
             </div>

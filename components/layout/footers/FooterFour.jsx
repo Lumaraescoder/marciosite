@@ -82,18 +82,7 @@ export default function FooterFour() {
           <div className="footer__bottom">
             <div className="row y-gap-5 justify-between items-center">
               <div className="col-auto text-white">
-                <div>
-                  {" "}
-                  <span> Made By</span>
-                  <a
-                    href="https://www.arcanadigital.pt"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Arcana Digital
-                  </a>
-                  {new Date().getFullYear()}
-                </div>
+                <div> {new Date().getFullYear()}</div>
               </div>
 
               <div className="col-auto">

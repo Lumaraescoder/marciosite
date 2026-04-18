@@ -108,24 +108,6 @@ export default function Menu() {
             </button>
           </div>
 
-          {/* TESTIMONIALS */}
-          <div className="desktopNav__item">
-            <button
-              onClick={() => handleMenuClick("testimonials-section")}
-              style={{
-                color: "black",
-                background: "none",
-                border: "none",
-                cursor: "pointer",
-                fontSize: "inherit",
-                fontFamily: "inherit",
-                padding: "8px 16px",
-              }}
-            >
-              {t("testimonials")}
-            </button>
-          </div>
-
           <div className="desktopNav__item">
             <Link
               href="/contact"

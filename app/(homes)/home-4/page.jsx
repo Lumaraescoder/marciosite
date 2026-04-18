@@ -4,7 +4,7 @@ import PopulerDestinations from "@/components/homes/destinations/PopulerDestinat
 import TrendingDestinationsTwo from "@/components/homes/destinations/TrendingDestinationsTwo";
 import FeaturesOne from "@/components/homes/features/FeaturesOne";
 import Hero7 from "@/components/homes/heros/Hero7";
-import TestimonialsThree from "@/components/homes/testimonials/TestimonialsThree";
+
 import FeaturedToures from "@/components/homes/tours/FeaturedToures";
 import FooterFour from "@/components/layout/footers/FooterFour";
 import FooterTwo from "@/components/layout/footers/FooterTwo";
@@ -47,13 +47,6 @@ export default function Page() {
         {/* Features Section - Adiciona ID */}
         <div id="features-section" className="features-section">
           <FeaturesOne />
-        </div>
-
-        {/* Testimonials Section - Adiciona ID */}
-        <div id="testimonials-section" className="testimonials-section">
-          <div className="mt-50">
-            <TestimonialsThree />
-          </div>
         </div>
 
         <FooterTwo />

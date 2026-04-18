@@ -184,11 +184,6 @@ export default function TourList7() {
                           </div>
                         </div>
                       )}
-                      <div className="tourCard__favorite">
-                        <button className="button -accent-1 size-35 bg-white rounded-full flex-center">
-                          <i className="icon-heart text-15"></i>
-                        </button>
-                      </div>
                     </div>
 
                     <div className="tourCard__content">

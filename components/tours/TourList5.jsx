@@ -355,10 +355,6 @@ export default function TourList5() {
                       className="img-ratio rounded-12"
                     />
                   </div>
-
-                  <button className="tourCard__favorite">
-                    <i className="icon-heart"></i>
-                  </button>
                 </div>
 
                 <div className="tourCard__content px-10 pt-10">

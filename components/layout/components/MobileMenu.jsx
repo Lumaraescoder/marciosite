@@ -119,26 +119,6 @@ export default function MobileMenu({ mobileMenuOpen, setMobileMenuOpen }) {
               </button>
             </li>
 
-            {/* TESTIMONIALS */}
-            <li className="menuNav__item">
-              <button
-                onClick={() => handleMenuClick("testimonials-section")}
-                style={{
-                  color: "inherit",
-                  background: "none",
-                  border: "none",
-                  cursor: "pointer",
-                  fontSize: "inherit",
-                  fontFamily: "inherit",
-                  padding: "8px 16px",
-                  width: "100%",
-                  textAlign: "left",
-                }}
-              >
-                Testimonials
-              </button>
-            </li>
-
             {/* CONTACT */}
             <li className="menuNav__item">
               <Link

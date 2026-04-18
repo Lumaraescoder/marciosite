@@ -43,10 +43,6 @@ export default function PopulerTours() {
 
                     <div className="tourCard__shape"></div>
                   </div>
-
-                  <button className="tourCard__favorite">
-                    <i className="icon-heart"></i>
-                  </button>
                 </div>
 
                 <div className="tourCard__content px-20 py-10">
