@@ -469,14 +469,14 @@ function TourSingleSidebarContent({ tour }) {
             <p className="text-15 mb-30">{t("payment_how_would_you_like")}</p>
 
             <div className="d-flex flex-column gap-3">
-              <button
+              {/* <button
                 onClick={() => handlePaymentChoice("cash")}
                 className="button -md -outline-accent-1 col-12 text-accent-1"
                 style={{ padding: "15px", marginBottom: "15px" }}
               >
                 <i className="icon-wallet mr-10"></i>
                 {t("payment_cash")}
-              </button>
+              </button> */}
 
               {/* Opção de pagamento por plataforma sempre disponível */}
               <button

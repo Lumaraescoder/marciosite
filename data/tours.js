@@ -62,7 +62,7 @@ export const tourData = [
       { id: 24, image: "/img/tourSingle/1/guias/novosguias/e294e68b-5303-46da-9f15-2f8c84fd0999.jpeg", alt: "Guia local" },
       { id: 25, image: "/img/tourSingle/1/guias/novosguias/fa0a177e-ef3f-4b6e-bf87-9f1fc5026ce1 (1).jpeg", alt: "Guia local" },
       { id: 26, image: "/img/tourSingle/1/guias/novosguias/fa0a177e-ef3f-4b6e-bf87-9f1fc5026ce1.jpeg", alt: "Guia local" },
-      { id: 27, image: "/img/tourSingle/1/guias/novosguias/WhatsApp Image 2026-04-18 at 08.20.07.jpeg", alt: "Guia local" }
+      { id: 27, image: "/img/tourSingle/1/guias/novosguias/fa0a177e-ef3f-4b6e-bf87-9f1fc5026ce1.jpeg", alt: "Guia local" }
     ],
 
     // Itinerário específico para o tour
@@ -135,23 +135,23 @@ export const tourData = [
     gallery: [
       {
         id: 1,
-        image: "/img/tourSingle/1/guias/luiz.jpg",
-        alt: "Guia no centro historico"
+        image: "/img/tourSingle/1/guias/novosguias/0c403742-5481-455d-aff6-b766bcea3be2.jpeg",
+        alt: "Guia novo"
       },
       {
         id: 2,
-        image: "/img/tourSingle/1/guias/mulher3.jpg",
-        alt: "Cliente no tour cultural"
+        image: "/img/tourSingle/1/guias/novosguias/1ded7030-b683-49d9-81da-6325ef89a12d.jpeg",
+        alt: "Guia novo"
       },
       {
         id: 3,
-        image: "/img/tourSingle/1/guias/neguinho3.jpeg",
-        alt: "Passeio em Chiado e Bairro Alto"
+        image: "/img/tourSingle/1/guias/novosguias/6e88d21a-96ff-4dde-b6b3-cf76f54b90b3.jpeg",
+        alt: "Guia novo"
       },
       {
         id: 4,
-        image: "/img/tourSingle/1/guias/mulher-copy.jpg",
-        alt: "Experiencia cultural em Lisboa"
+        image: "/img/tourSingle/1/guias/novosguias/6fc3bdbf-2365-4187-90d7-46fc20863263.jpeg",
+        alt: "Guia novo"
       }
     ],
 
@@ -213,43 +213,43 @@ export const tourData = [
     gallery: [
       {
         id: 1,
-        image: "/img/tourSingle/1/guias/rafabelem.jpeg",
-        alt: "Guia do tour de Belém"
+        image: "/img/tourSingle/1/guias/novosguias/0c403742-5481-455d-aff6-b766bcea3be2.jpeg",
+        alt: "Guia novo"
       },
       {
         id: 2,
-        image: "/img/tourSingle/1/guias/mosteiro.jpeg",
-        alt: "Mosteiro dos Jerónimos"
+        image: "/img/tourSingle/1/guias/novosguias/1ded7030-b683-49d9-81da-6325ef89a12d.jpeg",
+        alt: "Guia novo"
       },
       {
         id: 3,
-        image: "/img/tourSingle/1/guias/mosteirojeronimosbelem.jpeg",
-        alt: "Mosteiro dos Jerónimos - detalhe"
+        image: "/img/tourSingle/1/guias/novosguias/6e88d21a-96ff-4dde-b6b3-cf76f54b90b3.jpeg",
+        alt: "Guia novo"
       },
       {
         id: 4,
-        image: "/img/tourSingle/1/guias/pasteisdebelemfeitos.jpeg",
-        alt: "Pastéis de Belém autênticos"
+        image: "/img/tourSingle/1/guias/novosguias/6fc3bdbf-2365-4187-90d7-46fc20863263.jpeg",
+        alt: "Guia novo"
       },
       {
         id: 5,
-        image: "/img/tourSingle/1/guias/praça do comercio chiado bvelem.jpeg",
-        alt: "Praça do Comércio e Chiado em Belém"
+        image: "/img/tourSingle/1/guias/novosguias/7fb2011d-694c-4fd5-b1c4-091c545b768e.jpeg",
+        alt: "Guia novo"
       },
       {
         id: 6,
-        image: "/img/tourSingle/1/guias/tourbelemafonso.jpeg",
-        alt: "Tour Belém com Afonso"
+        image: "/img/tourSingle/1/guias/novosguias/8d7521c7-8505-4cfe-9b9c-8c6edeeefb00.jpeg",
+        alt: "Guia novo"
       },
       {
         id: 7,
-        image: "/img/tourSingle/1/guias/neguinho2.jpg",
-        alt: "Clientes no percurso de Belém"
+        image: "/img/tourSingle/1/guias/novosguias/26b780ff-0996-4668-9fee-88c7d2a719f2.jpeg",
+        alt: "Guia novo"
       },
       {
         id: 8,
-        image: "/img/tourSingle/1/guias/piccolo.jpg",
-        alt: "Tour privado em Belém"
+        image: "/img/tourSingle/1/guias/novosguias/66f2894d-b831-47f0-bb88-2eb6f2878e50.jpeg",
+        alt: "Guia novo"
       }
     ],
 

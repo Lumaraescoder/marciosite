@@ -238,13 +238,13 @@ export const destinationsFive = [
   {
     id: 1,
     title: "City tour by tuk tuk",
-    imgSrc: "/img/tourSingle/1/luiz2.jpg",
+    imgSrc: "/img/tourSingle/1/guias/novosguias/0c403742-5481-455d-aff6-b766bcea3be2.jpeg",
     count: 100,
   },
   {
     id: 2,
     title: "Tuk-Tuk Scenic Tours",
-    imgSrc: "/img/tourSingle/1/luiz.jpg",
+    imgSrc: "/img/tourSingle/1/guias/novosguias/1ded7030-b683-49d9-81da-6325ef89a12d.jpeg",
     count: 100,
   },
   {

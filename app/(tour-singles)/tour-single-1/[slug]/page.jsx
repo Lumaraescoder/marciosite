@@ -178,7 +178,7 @@ export default function Page({ params }) {
         <div className="mb-50">
           <SingleOne tour={tour} />
         </div>
-        <TestimonialsThree />
+        {/* <TestimonialsThree /> */}
         <TourSlider />
 
         <FooterTwo />

@@ -108,7 +108,7 @@ export default function Menu() {
             </button>
           </div>
 
-          <div className="desktopNav__item">
+          {/* <div className="desktopNav__item">
             <Link
               href="/contact"
               style={{
@@ -125,7 +125,7 @@ export default function Menu() {
             >
               {t("contact")}
             </Link>
-          </div>
+          </div> */}
         </div>
       </div>
     </>

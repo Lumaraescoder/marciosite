@@ -120,7 +120,7 @@ export default function MobileMenu({ mobileMenuOpen, setMobileMenuOpen }) {
             </li>
 
             {/* CONTACT */}
-            <li className="menuNav__item">
+            {/* <li className="menuNav__item">
               <Link
                 href="/contact"
                 onClick={() => setMobileMenuOpen(false)}
@@ -133,7 +133,7 @@ export default function MobileMenu({ mobileMenuOpen, setMobileMenuOpen }) {
               >
                 Contact
               </Link>
-            </li>
+            </li> */}
           </ul>
         </div>
 

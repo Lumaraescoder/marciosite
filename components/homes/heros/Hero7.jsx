@@ -88,7 +88,7 @@ export default function Hero7() {
           <Image
             width={1920}
             height={960}
-            src="/img/hero/7/desktopcapa.png"
+            src="/img/hero/7/capa1.png"
             alt="background"
             className="w-full h-full object-cover"
             style={{ objectPosition: "center 60%" }}
@@ -98,7 +98,7 @@ export default function Hero7() {
           <Image
             width={768}
             height={1024}
-            src="/img/hero/7/mobilecapa.png"
+            src="/img/hero/7/capa2.png"
             alt="background mobile"
             className="w-full h-full object-cover"
           />
@@ -125,10 +125,11 @@ export default function Hero7() {
               <h1
                 data-aos="fade-up"
                 data-aos-delay="300"
-                className="sr-only-visually-hidden mt-50"
-                style={{ fontSize: "0.1px", color: "transparent" }}
+                className="text-8xl md:text-9xl lg:text-[15rem] xl:text-[18rem] 2xl:text-[20rem] fw-700 text-white text-center mt-50 -tracking-wide drop-shadow-2xl  mt-5 leading-none"
+                style={{ textShadow: "2px 2px 4px rgba(0,0,0,0.5)" }}
               >
-                Tuk tuk tour lisbon
+                Sightseeing tours by tuk tuk
+                <br />
               </h1>
 
               {/* Botão Book Now - TOTALMENTE RESPONSIVO */}
@@ -145,7 +146,7 @@ export default function Hero7() {
                 }}
                 className="flex justify-center"
               >
-                <button
+                {/* <button
                   style={{
                     background: "linear-gradient(to right, #f97316, #ea580c)",
                     color: "white",
@@ -191,7 +192,7 @@ export default function Hero7() {
                   aria-label="Book Now - Ir para seção de Tours"
                 >
                   BOOK NOW
-                </button>
+                </button> */}
               </div>
             </div>
           </div>

@@ -36,7 +36,7 @@ export default function FeaturesOne() {
   ];
 
   return (
-    <section className="layout-pt-xl">
+    <section className="pt-[150px] pb-[100px]">
       <div className="container">
         <div className="row">
           <div className="col-auto">
