@@ -105,7 +105,7 @@ export const tourData = [
     metaDescription: "Discover Lisbon's Chiado and Bairro Alto with tuk-tuk tour. Historic cafes, art galleries, and panoramic city viewpoints.",
 
     // ✅ BASIC INFORMATION
-    imageSrc: "/img/tourSingle/1/guias/novosguias/1d9af6e2-e756-475d-b4d6-c503feec7b4a.jpeg",
+    imageSrc: "/img/tourSingle/1/guias/novosguias/6fc3bdbf-2365-4187-90d7-46fc20863263.jpeg",
     imageAlt: "Tour Chiado e Bairro Alto com guia",
     location: "Lisbon, Portugal",
     title: "Tour Chiado & Bairro Alto - Lisbon's Bohemian Soul",

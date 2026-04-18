@@ -560,24 +560,7 @@ function TourSingleSidebarContent({ tour }) {
                 {t("reserve_call_now")}
               </a>
 
-              {/* Botão do WhatsApp */}
-              <a
-                href={`https://wa.me/${whatsappNumber.replace(
-                  "+",
-                  "",
-                )}?text=${getWhatsAppMessage()}`}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="button -md col-12 text-white"
-                style={{
-                  marginTop: "10px",
-                  backgroundColor: "#25D366",
-                  border: "1px solid #25D366",
-                }}
-              >
-                <i className="icon-whatsapp mr-10"></i>
-                {t("Whats App")}
-              </a>
+              {/* Botão do WhatsApp REMOVED */}
 
               <button
                 onClick={() => setShowReserveByPhoneModal(false)}
