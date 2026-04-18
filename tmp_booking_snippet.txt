@@ -1,0 +1,7 @@
+{bookingData.persons} x €{bookingData.pricePerPerson} = $
+              {bookingData.totalPrice}
+            </div>
+          </div>
+        </div>
+
+        <div className=
