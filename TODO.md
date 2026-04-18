@@ -1,30 +1,11 @@
-# Task: Remove Testimonials link from header - COMPLETED ✓
-
-# New Task: Remove favorite heart button from tour cards
-
-## Files to edit (priority):
-
-## 1. Home relevant:
-
-- components/homes/tours/FeaturedToures.jsx
-
-## 2. Core tour lists:
-
-- components/tours/TourList1.jsx
-- components/tours/TourList2.jsx
-
-## 3. Others (30+):
-
-- Remaining TourList3-7, homes/tours/\*, etc.
+# Task: Add new guides photos section to all tour single pages
 
 ## Steps:
 
-- [x] Update TODO.md
-- [x] Edit FeaturedToures.jsx
-- [x] Edit TourList1.jsx
-- [x] Edit TourList2.jsx
-- [x] Edit TourList3.jsx
-- [x] Edit TourList4.jsx
-- [x] Edit PopulerTours.jsx
-- [ ] Edit TourList5.jsx - TourList7.jsx, other homes/tours/\*.jsx (~20 files)
-- [ ] Update TODO.md completed
+- [x] Step 1: Read components/tourSingle/pages/SingleOne.jsx to understand layout
+- [x] Step 2: List all exact novosguias image paths
+- [x] Step 3: Create components/tourSingle/GuidesSection.jsx
+- [x] Step 4: Update data/tours.js to add guidesGallery to all tours
+- [x] Step 5: Edit components/tourSingle/pages/SingleOne.jsx to include GuidesSection
+- [ ] Step 6: Test pages (e.g., /tour-single-1/belem-monuments-tour-pasteis-de-nata)
+- [ ] Step 7: attempt_completion

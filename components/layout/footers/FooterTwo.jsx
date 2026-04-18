@@ -56,21 +56,21 @@ function FooterTwoContent() {
             <div className="row y-gap-20 justify-between">
               <div className="col-auto">
                 <div className="row y-gap-20 items-center">
-                  <div className="col-auto">
+                  {/* <div className="col-auto">
                     <i className="icon-headphone text-50"></i>
-                  </div>
+                  </div> */}
 
-                  <div className="col-auto">
+                  {/* <div className="col-auto">
                     <div className="text-20 fw-500">
                       {t("footer_book_by_call")}
                       <span className="text-accent-1 ml-10">
                         +351 928 346 074
                       </span>
                     </div>
-                  </div>
+                  </div> */}
                 </div>
 
-                <div className="col-auto">
+                {/* <div className="col-auto">
                   <div className="footerSocials">
                     <div className="footerSocials__title">Follow Us</div>
 
@@ -78,7 +78,7 @@ function FooterTwoContent() {
                       <Socials />
                     </div>
                   </div>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>
@@ -147,24 +147,6 @@ function FooterTwoContent() {
               <div className="col-lg-auto col-6"></div>
 
               {/* Newsletter mantido */}
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div className="container">
-        <div className="footer__bottom">
-          <div className="row y-gap-5 justify-between items-center">
-            <div className="col-auto text-white">
-              <div>
-                © {new Date().getFullYear()} - {t("footer_copyright")}
-              </div>
-            </div>
-
-            <div className="col-auto">
-              <div className="footer__images d-flex items-center x-gap-10">
-                <Paymentcards />
-              </div>
             </div>
           </div>
         </div>

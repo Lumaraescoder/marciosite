@@ -137,14 +137,14 @@ export default function MobileMenu({ mobileMenuOpen, setMobileMenuOpen }) {
           </ul>
         </div>
 
-        <div className="menu__footer">
+        {/* <div className="menu__footer">
           <i className="icon-headphone text-50"></i>
 
           <div className="text-20 lh-12 fw-500 mt-20">
             <div>Book a tour By phone </div>
             <div className="text-accent-1">+351 928346074</div>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );

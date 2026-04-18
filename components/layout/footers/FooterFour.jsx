@@ -16,12 +16,12 @@ export default function FooterFour() {
                     <i className="icon-headphone text-50 text-white"></i>
                   </div>
 
-                  <div className="col-auto">
+                  {/* <div className="col-auto">
                     <div className="text-20 fw-500 text-white text-white">
                       Book By phone
                       <span className="text-white"> +351 928 346 074</span>
                     </div>
-                  </div>
+                  </div> */}
                 </div>
               </div>
 

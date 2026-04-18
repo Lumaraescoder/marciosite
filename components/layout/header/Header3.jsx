@@ -44,13 +44,13 @@ export default function Header3() {
           {/* Logo e Menu */}
           <div className="header__logo">
             <Link href="/">
-              <Image
+              {/* <Image
                 width={isSticky ? 70 : 88} // diminui ao scroll
                 height={isSticky ? 25 : 32}
                 src="/img/general/semfundo.png"
                 alt="logo icon"
                 priority
-              />
+              /> */}
             </Link>
 
             <Menu />

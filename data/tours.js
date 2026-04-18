@@ -34,6 +34,7 @@ export const tourData = [
     },
 
     // ✅ OPTIMIZED GALLERY
+    // GALLERY COMMENTED FOR NEW GUIDES IN SINGLE PAGES
     gallery: [
       {
         id: 1,
@@ -168,6 +169,7 @@ export const tourData = [
     },
 
     // ✅ OPTIMIZED GALLERY
+    // GALLERY COMMENTED FOR NEW GUIDES IN SINGLE PAGES
     gallery: [
       {
         id: 1,
@@ -391,305 +393,305 @@ export const tourData = [
     languages: ["English", "Portuguese", "Spanish"]
   },
 
-  {
-    id: 5,
-    // ✅ SEO FIELDS - TAMANHO PERFEITO
-    slug: "lisbon-viewpoints-tour-miradouros",
-    metaTitle: "Lisbon Viewpoints Tour - Scenic Miradouros",
-    metaDescription: "Discover Lisbon's stunning viewpoints with miradouros tour. Panoramic city views and perfect photo opportunities.",
+  // {
+  //   id: 5,
+  //   // ✅ SEO FIELDS - TAMANHO PERFEITO
+  //   slug: "lisbon-viewpoints-tour-miradouros",
+  //   metaTitle: "Lisbon Viewpoints Tour - Scenic Miradouros",
+  //   metaDescription: "Discover Lisbon's stunning viewpoints with miradouros tour. Panoramic city views and perfect photo opportunities.",
 
-    // ✅ BASIC INFORMATION
-    imageSrc: "/img/tourSingle/1/guias/miradouros.jpg",
-    imageAlt: "Tour de miradouros com guia",
-    location: "Lisbon, Portugal",
-    title: "Miradouros de Lisboa – Viewpoints Tour - The Seven Hills Experience",
-    ratingCount: 156,
-    rating: 4.8,
-    duration: "2 hours",
-    price: 130.00,
-    speed: "Leisure",
-    category: "Scenic Tour",
-    feature: "Photography",
+  //   // ✅ BASIC INFORMATION
+  //   imageSrc: "/img/tourSingle/1/guias/miradouros.jpg",
+  //   imageAlt: "Tour de miradouros com guia",
+  //   location: "Lisbon, Portugal",
+  //   title: "Miradouros de Lisboa – Viewpoints Tour - The Seven Hills Experience",
+  //   ratingCount: 156,
+  //   rating: 4.8,
+  //   duration: "2 hours",
+  //   price: 130.00,
+  //   speed: "Leisure",
+  //   category: "Scenic Tour",
+  //   feature: "Photography",
 
-    // ✅ DETAILED OVERVIEW
-    overview: {
-      description: "Chasing the best views in Lisbon is even better when the tour is personalized. We take you to iconic miradouros and quieter spots, with time to breathe, photograph, and enjoy the Tagus River from above. Your guide adapts the route to your interests and the light of the day, whether you want sunrise, golden hour, or a relaxed mid-morning ride. It is a calm, scenic experience made for your pace and your camera.",
-      highlights: [
-        "Visit to Nossa Senhora do Monte - Lisbon's highest viewpoint",
-        "Explore Santa Luzia viewpoint with its beautiful tile panels",
-        "Panoramic views from São Pedro de Alcântara overlooking the castle",
-        "Discover Portas do Sol viewpoint in the heart of Alfama",
-        "See the Graça viewpoint and its trendy cafe culture",
-        "Learn photography tips for capturing best cityscapes"
-      ],
-    },
+  //   // ✅ DETAILED OVERVIEW
+  //   overview: {
+  //     description: "Chasing the best views in Lisbon is even better when the tour is personalized. We take you to iconic miradouros and quieter spots, with time to breathe, photograph, and enjoy the Tagus River from above. Your guide adapts the route to your interests and the light of the day, whether you want sunrise, golden hour, or a relaxed mid-morning ride. It is a calm, scenic experience made for your pace and your camera.",
+  //     highlights: [
+  //       "Visit to Nossa Senhora do Monte - Lisbon's highest viewpoint",
+  //       "Explore Santa Luzia viewpoint with its beautiful tile panels",
+  //       "Panoramic views from São Pedro de Alcântara overlooking the castle",
+  //       "Discover Portas do Sol viewpoint in the heart of Alfama",
+  //       "See the Graça viewpoint and its trendy cafe culture",
+  //       "Learn photography tips for capturing best cityscapes"
+  //     ],
+  //   },
 
-    // ✅ OPTIMIZED GALLERY
-    gallery: [
-      {
-        id: 1,
-        image: "/img/tourSingle/1/guias/miradouros.jpg",
-        alt: "Rota de miradouros em Lisboa"
-      },
-      {
-        id: 2,
-        image: "/img/tourSingle/1/guias/miradouro4.jpeg",
-        alt: "Paragem panoramica"
-      },
-      {
-        id: 3,
-        image: "/img/tourSingle/1/guias/mulher-5.jpeg",
-        alt: "Cliente no tour de miradouros"
-      },
-      {
-        id: 4,
-        image: "/img/tourSingle/1/guias/mulher3.jpg",
-        alt: "Passeio fotografico com guia"
-      }
-    ],
+  //   // ✅ OPTIMIZED GALLERY
+  //   gallery: [
+  //     {
+  //       id: 1,
+  //       image: "/img/tourSingle/1/guias/miradouros.jpg",
+  //       alt: "Rota de miradouros em Lisboa"
+  //     },
+  //     {
+  //       id: 2,
+  //       image: "/img/tourSingle/1/guias/miradouro4.jpeg",
+  //       alt: "Paragem panoramica"
+  //     },
+  //     {
+  //       id: 3,
+  //       image: "/img/tourSingle/1/guias/mulher-5.jpeg",
+  //       alt: "Cliente no tour de miradouros"
+  //     },
+  //     {
+  //       id: 4,
+  //       image: "/img/tourSingle/1/guias/mulher3.jpg",
+  //       alt: "Passeio fotografico com guia"
+  //     }
+  //   ],
 
-    // ✅ ADDITIONAL SEO INFORMATION
-    keywords: [
-      "Lisbon viewpoints tour",
-      "miradouros Lisbon",
-      "Lisbon photo spots",
-      "panoramic views Lisbon",
-      "seven hills Lisbon"
-    ],
-    included: [
-      "Expert photography and local guide",
-      "Comfortable tuk-tuk transportation",
-      "Visit to 5-7 different viewpoints",
-      "Traditional Portuguese drink tasting",
-      "Photography tips and assistance"
-    ],
-    meetingPoint: "Miradouro de Santa Luzia in Alfama",
-    difficulty: "Easy - minimal walking required",
-    groupSize: "5 people per tuk",
-    availability: "Daily at sunrise, 11:00 AM, and sunset",
-    languages: ["English", "Portuguese"]
-  },
+  //   // ✅ ADDITIONAL SEO INFORMATION
+  //   keywords: [
+  //     "Lisbon viewpoints tour",
+  //     "miradouros Lisbon",
+  //     "Lisbon photo spots",
+  //     "panoramic views Lisbon",
+  //     "seven hills Lisbon"
+  //   ],
+  //   included: [
+  //     "Expert photography and local guide",
+  //     "Comfortable tuk-tuk transportation",
+  //     "Visit to 5-7 different viewpoints",
+  //     "Traditional Portuguese drink tasting",
+  //     "Photography tips and assistance"
+  //   ],
+  //   meetingPoint: "Miradouro de Santa Luzia in Alfama",
+  //   difficulty: "Easy - minimal walking required",
+  //   groupSize: "5 people per tuk",
+  //   availability: "Daily at sunrise, 11:00 AM, and sunset",
+  //   languages: ["English", "Portuguese"]
+  // },
 
-  {
-    id: 6,
-    // ✅ SEO FIELDS - TAMANHO PERFEITO
-    slug: "christmas-lights-tour-lisbon",
-    metaTitle: "Christmas Lights Tour - Festive Lisbon Illuminations",
-    metaDescription: "Experience Lisbon's magical Christmas lights with evening tuk-tuk tour. Festive illuminations and holiday traditions.",
+  // {
+  //   id: 6,
+  //   // ✅ SEO FIELDS - TAMANHO PERFEITO
+  //   slug: "christmas-lights-tour-lisbon",
+  //   metaTitle: "Christmas Lights Tour - Festive Lisbon Illuminations",
+  //   metaDescription: "Experience Lisbon's magical Christmas lights with evening tuk-tuk tour. Festive illuminations and holiday traditions.",
 
-    // ✅ BASIC INFORMATION
-    imageSrc: "/img/tourSingle/1/light1.jpg",
-    imageAlt: "Magical Christmas lights display Lisbon festive holiday illuminations tour",
-    location: "Lisbon, Portugal",
-    title: "Magical Christmas Lights Tour in Lisbon - Festive Illuminations",
-    ratingCount: 98,
-    rating: 4.8,
-    duration: "2 hours",
-    price: 120.00,
-    speed: "Leisure",
-    category: "Seasonal Tour",
-    feature: "Holiday Experience",
+  //   // ✅ BASIC INFORMATION
+  //   imageSrc: "/img/tourSingle/1/light1.jpg",
+  //   imageAlt: "Magical Christmas lights display Lisbon festive holiday illuminations tour",
+  //   location: "Lisbon, Portugal",
+  //   title: "Magical Christmas Lights Tour in Lisbon - Festive Illuminations",
+  //   ratingCount: 98,
+  //   rating: 4.8,
+  //   duration: "2 hours",
+  //   price: 120.00,
+  //   speed: "Leisure",
+  //   category: "Seasonal Tour",
+  //   feature: "Holiday Experience",
 
-    // ✅ DETAILED OVERVIEW
-    overview: {
-      description: "Lisbon glows during the holidays, and this private evening tour lets you enjoy it your way. We glide through the festive lights of Baixa, Chiado, and Praça do Comércio in a cozy tuk-tuk, with stops for photos and holiday treats. Want to linger at a market, sip something warm, or find the perfect view of the lights? Just ask. It is a relaxed, magical ride tailored to your mood and pace.",
-      highlights: [
-        "See Lisbon's spectacular Christmas lights in Baixa and Chiado districts",
-        "Visit the giant Christmas tree and illuminations at Praça do Comércio",
-        "Explore Rossio Square's festive decorations and nativity scenes",
-        "Discover Christmas markets and local holiday traditions",
-        "Warm up with traditional Portuguese Christmas treats and drinks",
-        "See the Liberty Avenue (Avenida da Liberdade) light tunnel"
-      ],
-    },
+  //   // ✅ DETAILED OVERVIEW
+  //   overview: {
+  //     description: "Lisbon glows during the holidays, and this private evening tour lets you enjoy it your way. We glide through the festive lights of Baixa, Chiado, and Praça do Comércio in a cozy tuk-tuk, with stops for photos and holiday treats. Want to linger at a market, sip something warm, or find the perfect view of the lights? Just ask. It is a relaxed, magical ride tailored to your mood and pace.",
+  //     highlights: [
+  //       "See Lisbon's spectacular Christmas lights in Baixa and Chiado districts",
+  //       "Visit the giant Christmas tree and illuminations at Praça do Comércio",
+  //       "Explore Rossio Square's festive decorations and nativity scenes",
+  //       "Discover Christmas markets and local holiday traditions",
+  //       "Warm up with traditional Portuguese Christmas treats and drinks",
+  //       "See the Liberty Avenue (Avenida da Liberdade) light tunnel"
+  //     ],
+  //   },
 
-    // ✅ OPTIMIZED GALLERY
-    gallery: [
-      {
-        id: 1,
-        image: "/img/tourSingle/1/light1.jpg",
-        alt: "Magical Christmas lights display on Lisbon streets during festive season"
-      },
-      {
-        id: 2,
-        image: "/img/tourSingle/1/imgi_1_f3c64a471bd1d718d28ca0bb0ce8f5aa-Lisbon Christmas Streets.jpg",
-        alt: "Lisbon Christmas streets illuminated with festive holiday decorations"
-      },
-      {
-        id: 3,
-        image: "/img/tourSingle/1/luzes-de-natal-no-chiado-@playstationpt-_4-1024x683.jpg",
-        alt: "Chiado district Lisbon Christmas lights and festive atmosphere"
-      }
-    ],
+  //   // ✅ OPTIMIZED GALLERY
+  //   gallery: [
+  //     {
+  //       id: 1,
+  //       image: "/img/tourSingle/1/light1.jpg",
+  //       alt: "Magical Christmas lights display on Lisbon streets during festive season"
+  //     },
+  //     {
+  //       id: 2,
+  //       image: "/img/tourSingle/1/imgi_1_f3c64a471bd1d718d28ca0bb0ce8f5aa-Lisbon Christmas Streets.jpg",
+  //       alt: "Lisbon Christmas streets illuminated with festive holiday decorations"
+  //     },
+  //     {
+  //       id: 3,
+  //       image: "/img/tourSingle/1/luzes-de-natal-no-chiado-@playstationpt-_4-1024x683.jpg",
+  //       alt: "Chiado district Lisbon Christmas lights and festive atmosphere"
+  //     }
+  //   ],
 
-    // ✅ ADDITIONAL SEO INFORMATION
-    keywords: [
-      "Christmas lights Lisbon",
-      "Lisbon holiday tour",
-      "festive Lisbon illuminations",
-      "Christmas tour Portugal",
-      "holiday lights tuk-tuk"
-    ],
-    included: [
-      "Expert local guide",
-      "Comfortable heated tuk-tuk",
-      "Traditional Christmas treats tasting",
-      "Mulled wine or hot chocolate",
-      "Blankets for comfort"
-    ],
-    meetingPoint: "Praça do Comércio Christmas tree",
-    difficulty: "Easy - relaxed evening tour",
-    groupSize: "5 people per tuk",
-    availability: "November 25th - January 6th, daily at 6:00 PM and 8:00 PM",
-    languages: ["English", "Portuguese"],
-    season: "Christmas Season (November-January)"
-  },
+  //   // ✅ ADDITIONAL SEO INFORMATION
+  //   keywords: [
+  //     "Christmas lights Lisbon",
+  //     "Lisbon holiday tour",
+  //     "festive Lisbon illuminations",
+  //     "Christmas tour Portugal",
+  //     "holiday lights tuk-tuk"
+  //   ],
+  //   included: [
+  //     "Expert local guide",
+  //     "Comfortable heated tuk-tuk",
+  //     "Traditional Christmas treats tasting",
+  //     "Mulled wine or hot chocolate",
+  //     "Blankets for comfort"
+  //   ],
+  //   meetingPoint: "Praça do Comércio Christmas tree",
+  //   difficulty: "Easy - relaxed evening tour",
+  //   groupSize: "5 people per tuk",
+  //   availability: "November 25th - January 6th, daily at 6:00 PM and 8:00 PM",
+  //   languages: ["English", "Portuguese"],
+  //   season: "Christmas Season (November-January)"
+  // },
 
-  {
-    id: 7,
-    // ✅ SEO FIELDS - TAMANHO PERFEITO
-    slug: "sintra-cascais-day-trip-from-lisbon",
-    metaTitle: "Sintra & Cascais Day Trip - Palaces & Coast",
-    metaDescription: "Day trip from Lisbon to Sintra palaces and Cascais coastline. UNESCO sites and Atlantic Ocean views.",
+  // {
+  //   id: 7,
+  //   // ✅ SEO FIELDS - TAMANHO PERFEITO
+  //   slug: "sintra-cascais-day-trip-from-lisbon",
+  //   metaTitle: "Sintra & Cascais Day Trip - Palaces & Coast",
+  //   metaDescription: "Day trip from Lisbon to Sintra palaces and Cascais coastline. UNESCO sites and Atlantic Ocean views.",
 
-    // ✅ BASIC INFORMATION
-    imageSrc: "/img/tourSingle/1/palacio.png",
-    imageAlt: "Comfortable tour van for Sintra and Cascais day trip from Lisbon Portugal",
-    location: "Portugal",
-    title: "Sintra e Cascais departing from Lisboa",
-    ratingCount: 223,
-    rating: 4.8,
-    duration: "8 hours",
-    price: 320.00,
-    speed: "Full Day",
-    category: "Day Trip",
-    feature: "UNESCO Heritage",
+  //   // ✅ BASIC INFORMATION
+  //   imageSrc: "/img/tourSingle/1/palacio.png",
+  //   imageAlt: "Comfortable tour van for Sintra and Cascais day trip from Lisbon Portugal",
+  //   location: "Portugal",
+  //   title: "Sintra e Cascais departing from Lisboa",
+  //   ratingCount: 223,
+  //   rating: 4.8,
+  //   duration: "8 hours",
+  //   price: 320.00,
+  //   speed: "Full Day",
+  //   category: "Day Trip",
+  //   feature: "UNESCO Heritage",
 
-    // ✅ DETAILED OVERVIEW
-    overview: {
-      description: "This day trip is designed around what you want to see most in Sintra and Cascais. Travel in comfort with a local guide who adapts the pace to you, whether you want more palace time, scenic viewpoints, or coastal stops. From fairy-tale architecture in Sintra to the Atlantic breeze in Cascais, we build a balanced route with time for photos, coffee, and quiet moments. It is a personal, unhurried journey beyond Lisbon.",
-      highlights: [
-        "Visit Pena Palace - Sintra's colorful Romanticist castle and UNESCO site",
-        "Explore Quinta da Regaleira's mysterious initiation wells and palace",
-        "Discover Sintra National Palace and its historic significance",
-        "Visit Cabo da Roca - continental Europe's westernmost point",
-        "Explore Cascais charming fishing village and its beautiful bay",
-        "Scenic drive along the Atlantic coast on the Estoril coastline"
-      ],
-    },
+  //   // ✅ DETAILED OVERVIEW
+  //   overview: {
+  //     description: "This day trip is designed around what you want to see most in Sintra and Cascais. Travel in comfort with a local guide who adapts the pace to you, whether you want more palace time, scenic viewpoints, or coastal stops. From fairy-tale architecture in Sintra to the Atlantic breeze in Cascais, we build a balanced route with time for photos, coffee, and quiet moments. It is a personal, unhurried journey beyond Lisbon.",
+  //     highlights: [
+  //       "Visit Pena Palace - Sintra's colorful Romanticist castle and UNESCO site",
+  //       "Explore Quinta da Regaleira's mysterious initiation wells and palace",
+  //       "Discover Sintra National Palace and its historic significance",
+  //       "Visit Cabo da Roca - continental Europe's westernmost point",
+  //       "Explore Cascais charming fishing village and its beautiful bay",
+  //       "Scenic drive along the Atlantic coast on the Estoril coastline"
+  //     ],
+  //   },
 
-    // ✅ OPTIMIZED GALLERY
-    gallery: [
-      {
-        id: 1,
-        image: "/img/tourSingle/1/palacio.png",
-        alt: "Colorful Pena Palace Sintra Romanticist architecture UNESCO World Heritage"
-      },
-      {
-        id: 2,
-        image: "/img/tourSingle/1/poço.jpg",
-        alt: "Mysterious initiation well Quinta da Regaleira Sintra Portugal"
-      },
-      {
-        id: 3,
-        image: "/img/tourSingle/1/caiscais.jpg",
-        alt: "Charming Cascais fishing village bay and coastline near Lisbon"
-      }
-    ],
-    // ✅ ADDITIONAL SEO INFORMATION
-    keywords: [
-      "Sintra day trip Lisbon",
-      "Cascais tour from Lisbon",
-      "Pena Palace tour",
-      "UNESCO sites near Lisbon",
-      "Portugal day trips"
-    ],
-    included: [
-      "Expert local guide",
-      "Comfortable air-conditioned transportation",
-      "All palace entries and skip-the-line access",
-      "Hotel pickup and drop-off in Lisbon",
-      "Bottled water and refreshments"
-    ],
-    meetingPoint: "Hotel pickup in Lisbon central areas",
-    difficulty: "Moderate - includes walking and some hills",
-    groupSize: "7 people per car",
-    availability: "Daily at 8:30 AM",
-    languages: ["English", "Portuguese", "Spanish"]
-  },
+  //   // ✅ OPTIMIZED GALLERY
+  //   gallery: [
+  //     {
+  //       id: 1,
+  //       image: "/img/tourSingle/1/palacio.png",
+  //       alt: "Colorful Pena Palace Sintra Romanticist architecture UNESCO World Heritage"
+  //     },
+  //     {
+  //       id: 2,
+  //       image: "/img/tourSingle/1/poço.jpg",
+  //       alt: "Mysterious initiation well Quinta da Regaleira Sintra Portugal"
+  //     },
+  //     {
+  //       id: 3,
+  //       image: "/img/tourSingle/1/caiscais.jpg",
+  //       alt: "Charming Cascais fishing village bay and coastline near Lisbon"
+  //     }
+  //   ],
+  //   // ✅ ADDITIONAL SEO INFORMATION
+  //   keywords: [
+  //     "Sintra day trip Lisbon",
+  //     "Cascais tour from Lisbon",
+  //     "Pena Palace tour",
+  //     "UNESCO sites near Lisbon",
+  //     "Portugal day trips"
+  //   ],
+  //   included: [
+  //     "Expert local guide",
+  //     "Comfortable air-conditioned transportation",
+  //     "All palace entries and skip-the-line access",
+  //     "Hotel pickup and drop-off in Lisbon",
+  //     "Bottled water and refreshments"
+  //   ],
+  //   meetingPoint: "Hotel pickup in Lisbon central areas",
+  //   difficulty: "Moderate - includes walking and some hills",
+  //   groupSize: "7 people per car",
+  //   availability: "Daily at 8:30 AM",
+  //   languages: ["English", "Portuguese", "Spanish"]
+  // },
 
-  {
-    id: 8,
-    // ✅ SEO FIELDS - TAMANHO PERFEITO
-    slug: "fatima-batalha-nazare-obidos-tour",
-    metaTitle: "Fátima, Batalha, Nazaré & Óbidos Tour",
-    metaDescription: "Explore central Portugal's spiritual landmarks. Fátima Sanctuary, Batalha Monastery, and medieval Óbidos.",
+  // {
+  //   id: 8,
+  //   // ✅ SEO FIELDS - TAMANHO PERFEITO
+  //   slug: "fatima-batalha-nazare-obidos-tour",
+  //   metaTitle: "Fátima, Batalha, Nazaré & Óbidos Tour",
+  //   metaDescription: "Explore central Portugal's spiritual landmarks. Fátima Sanctuary, Batalha Monastery, and medieval Óbidos.",
 
-    // ✅ BASIC INFORMATION
-    imageSrc: "/img/tourSingle/1/fatima].jpg",
-    imageAlt: "Comfortable tour transportation for Fátima Batalha Nazaré Óbidos day trip Portugal",
-    location: "Portugal",
-    title: "Fatima, Batalha, Nazare and Obidos",
-    ratingCount: 178,
-    rating: 4.8,
-    duration: "8 hours",
-    price: 280.00,
-    speed: "Full Day",
-    category: "Spiritual Tour",
-    feature: "Cultural Heritage",
+  //   // ✅ BASIC INFORMATION
+  //   imageSrc: "/img/tourSingle/1/fatima].jpg",
+  //   imageAlt: "Comfortable tour transportation for Fátima Batalha Nazaré Óbidos day trip Portugal",
+  //   location: "Portugal",
+  //   title: "Fatima, Batalha, Nazare and Obidos",
+  //   ratingCount: 178,
+  //   rating: 4.8,
+  //   duration: "8 hours",
+  //   price: 280.00,
+  //   speed: "Full Day",
+  //   category: "Spiritual Tour",
+  //   feature: "Cultural Heritage",
 
-    // ✅ DETAILED OVERVIEW
-    overview: {
-      description: "This is a meaningful day across central Portugal, shaped around your interests and your pace. With a private guide, we visit Fátima, Batalha, Nazaré, and Óbidos, taking time where you want to reflect, explore, or simply enjoy the scenery. We can slow down at the monastery, seek out the best ocean views, or wander the medieval streets longer. It is a personalized journey through places of faith, history, and timeless beauty.",
-      highlights: [
-        "Visit the Sanctuary of Fátima and learn about the 1917 apparitions",
-        "Explore Batalha Monastery - Gothic masterpiece and UNESCO World Heritage",
-        "See Nazaré's famous giant waves and traditional fishing community",
-        "Walk the medieval walls of Óbidos and explore its charming streets",
-        "Visit the Houses of Fátima children and Apparitions Chapel",
-        "Taste the famous Ginja liqueur in chocolate cups in Óbidos"
-      ],
-    },
+  //   // ✅ DETAILED OVERVIEW
+  //   overview: {
+  //     description: "This is a meaningful day across central Portugal, shaped around your interests and your pace. With a private guide, we visit Fátima, Batalha, Nazaré, and Óbidos, taking time where you want to reflect, explore, or simply enjoy the scenery. We can slow down at the monastery, seek out the best ocean views, or wander the medieval streets longer. It is a personalized journey through places of faith, history, and timeless beauty.",
+  //     highlights: [
+  //       "Visit the Sanctuary of Fátima and learn about the 1917 apparitions",
+  //       "Explore Batalha Monastery - Gothic masterpiece and UNESCO World Heritage",
+  //       "See Nazaré's famous giant waves and traditional fishing community",
+  //       "Walk the medieval walls of Óbidos and explore its charming streets",
+  //       "Visit the Houses of Fátima children and Apparitions Chapel",
+  //       "Taste the famous Ginja liqueur in chocolate cups in Óbidos"
+  //     ],
+  //   },
 
-    // ✅ OPTIMIZED GALLERY
-    gallery: [
-      {
-        id: 1,
-        image: "/img/tourSingle/1/batalha.jpg",
-        alt: "Batalha Monastery magnificent Gothic architecture UNESCO World Heritage Portugal"
-      },
-      {
-        id: 2,
-        image: "/img/tourSingle/1/obidos.jpg",
-        alt: "Medieval walled town Óbidos charming streets and castle Portugal"
-      },
-      {
-        id: 3,
-        image: "/img/tourSingle/1/fatima].jpg",
-        alt: "Sanctuary of Fátima spiritual pilgrimage site central Portugal"
-      }
-    ],
-    // ✅ ADDITIONAL SEO INFORMATION
-    keywords: [
-      "Fátima tour from Lisbon",
-      "Batalha Monastery visit",
-      "Nazaré giant waves tour",
-      "Óbidos medieval town",
-      "central Portugal day trip"
-    ],
-    included: [
-      "Expert local guide",
-      "Comfortable air-conditioned transportation",
-      "All monument entries included",
-      "Hotel pickup and drop-off in Lisbon",
-      "Ginja tasting in Óbidos"
-    ],
-    meetingPoint: "Hotel pickup in Lisbon central areas",
-    difficulty: "Moderate - includes walking and some stairs",
-    groupSize: "7 people per car",
-    availability: "Daily at 7:30 AM",
-    languages: ["English", "Portuguese", "Spanish"]
-  }
+  //   // ✅ OPTIMIZED GALLERY
+  //   gallery: [
+  //     {
+  //       id: 1,
+  //       image: "/img/tourSingle/1/batalha.jpg",
+  //       alt: "Batalha Monastery magnificent Gothic architecture UNESCO World Heritage Portugal"
+  //     },
+  //     {
+  //       id: 2,
+  //       image: "/img/tourSingle/1/obidos.jpg",
+  //       alt: "Medieval walled town Óbidos charming streets and castle Portugal"
+  //     },
+  //     {
+  //       id: 3,
+  //       image: "/img/tourSingle/1/fatima].jpg",
+  //       alt: "Sanctuary of Fátima spiritual pilgrimage site central Portugal"
+  //     }
+  //   ],
+  //   // ✅ ADDITIONAL SEO INFORMATION
+  //   keywords: [
+  //     "Fátima tour from Lisbon",
+  //     "Batalha Monastery visit",
+  //     "Nazaré giant waves tour",
+  //     "Óbidos medieval town",
+  //     "central Portugal day trip"
+  //   ],
+  //   included: [
+  //     "Expert local guide",
+  //     "Comfortable air-conditioned transportation",
+  //     "All monument entries included",
+  //     "Hotel pickup and drop-off in Lisbon",
+  //     "Ginja tasting in Óbidos"
+  //   ],
+  //   meetingPoint: "Hotel pickup in Lisbon central areas",
+  //   difficulty: "Moderate - includes walking and some stairs",
+  //   groupSize: "7 people per car",
+  //   availability: "Daily at 7:30 AM",
+  //   languages: ["English", "Portuguese", "Spanish"]
+  // }
 ];
 
 export const tourDataTwo = [

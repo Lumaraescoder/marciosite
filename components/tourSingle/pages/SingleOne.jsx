@@ -7,6 +7,7 @@ import Included from "../Included";
 import Faq from "../Faq";
 import TourSingleSidebar from "../TourSingleSidebar";
 import Gallery1 from "../Galleries/Gallery1";
+
 import RoadMap2 from "../Roadmap2";
 import { useTranslatedTours } from "../../../hooks/usetranslatedtours";
 import { useTranslation } from "../../../hooks/useLang";
