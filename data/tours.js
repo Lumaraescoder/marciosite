@@ -7,7 +7,7 @@ export const tourData = [
     metaDescription: "Explore Alfama, Lisbon's oldest neighborhood with tuk-tuk tour. Discover hidden viewpoints, Fado music, and authentic Portuguese culture.",
 
     // ✅ BASIC INFORMATION
-    imageSrc: "/img/tourSingle/1/guias/piccolog-alfama-main.jpeg",
+    imageSrc: "/img/tourSingle/1/guias/novosguias/0c403742-5481-455d-aff6-b766bcea3be2.jpeg",
     imageAlt: "Tour de Alfama com guia local",
     location: "Lisbon, Portugal",
     title: "The Old Town Tour Alfama - Lisbon's Historic Quarter",
@@ -36,71 +36,33 @@ export const tourData = [
     // ✅ OPTIMIZED GALLERY
     // GALLERY COMMENTED FOR NEW GUIDES IN SINGLE PAGES
     gallery: [
-      {
-        id: 1,
-        image: "/img/tourSingle/1/guias/piccolog-alfama-main.jpeg",
-        alt: "Alfama com guia local"
-      },
-      {
-        id: 2,
-        image: "/img/tourSingle/1/guias/piccolo.jpg",
-        alt: "Guia no percurso de Alfama"
-      },
-      {
-        id: 3,
-        image: "/img/tourSingle/1/guias/luiz.jpg",
-        alt: "Passeio privado em Alfama"
-      },
-      {
-        id: 4,
-        image: "/img/tourSingle/1/guias/neguinho2.jpg",
-        alt: "Clientes no tour de Alfama"
-      },
-      {
-        id: 5,
-        image: "/img/tourSingle/1/guias/alfama.jpeg",
-        alt: "Vista de Alfama"
-      },
-      {
-        id: 6,
-        image: "/img/tourSingle/1/guias/filipaportuguesaemalfama.jpeg",
-        alt: "Guia Filipa em Alfama"
-      },
-      {
-        id: 7,
-        image: "/img/tourSingle/1/guias/geovannaemalfama.jpeg",
-        alt: "Geovanna em Alfama"
-      },
-      {
-        id: 8,
-        image: "/img/tourSingle/1/guias/giovanna.jpeg",
-        alt: "Giovanna em Alfama"
-      },
-      {
-        id: 9,
-        image: "/img/tourSingle/1/guias/giovannnamulher3.jpeg",
-        alt: "Giovanna mulher em Alfama"
-      },
-      {
-        id: 10,
-        image: "/img/tourSingle/1/guias/igrrejagraçaalfama.jpeg",
-        alt: "Igreja da Graça em Alfama"
-      },
-      {
-        id: 11,
-        image: "/img/tourSingle/1/guias/ingridfotos.jpeg",
-        alt: "Ingrid em Alfama"
-      },
-      {
-        id: 12,
-        image: "/img/tourSingle/1/guias/maisumafotodase.jpeg",
-        alt: "Mais uma foto de Alfama"
-      },
-      {
-        id: 13,
-        image: "/img/tourSingle/1/guias/miradouroalfama.jpeg",
-        alt: "Miradouro em Alfama"
-      }
+      { id: 1, image: "/img/tourSingle/1/guias/novosguias/0c403742-5481-455d-aff6-b766bcea3be2.jpeg", alt: "Guia local" },
+      { id: 2, image: "/img/tourSingle/1/guias/novosguias/1d9af6e2-e756-475d-b4d6-c503feec7b4a.jpeg", alt: "Guia local" },
+      { id: 3, image: "/img/tourSingle/1/guias/novosguias/1ded7030-b683-49d9-81da-6325ef89a12d.jpeg", alt: "Guia local" },
+      { id: 4, image: "/img/tourSingle/1/guias/novosguias/6e88d21a-96ff-4dde-b6b3-cf76f54b90b3 (1).jpeg", alt: "Guia local" },
+      { id: 5, image: "/img/tourSingle/1/guias/novosguias/6e88d21a-96ff-4dde-b6b3-cf76f54b90b3.jpeg", alt: "Guia local" },
+      { id: 6, image: "/img/tourSingle/1/guias/novosguias/6fc3bdbf-2365-4187-90d7-46fc20863263.jpeg", alt: "Guia local" },
+      { id: 7, image: "/img/tourSingle/1/guias/novosguias/7fb2011d-694c-4fd5-b1c4-091c545b768e (1).jpeg", alt: "Guia local" },
+      { id: 8, image: "/img/tourSingle/1/guias/novosguias/7fb2011d-694c-4fd5-b1c4-091c545b768e.jpeg", alt: "Guia local" },
+      { id: 9, image: "/img/tourSingle/1/guias/novosguias/8d7521c7-8505-4cfe-9b9c-8c6edeeefb00.jpeg", alt: "Guia local" },
+      { id: 10, image: "/img/tourSingle/1/guias/novosguias/26b780ff-0996-4668-9fee-88c7d2a719f2.jpeg", alt: "Guia local" },
+      { id: 11, image: "/img/tourSingle/1/guias/novosguias/66f2894d-b831-47f0-bb88-2eb6f2878e50.jpeg", alt: "Guia local" },
+      { id: 12, image: "/img/tourSingle/1/guias/novosguias/87b9251c-fc7b-410c-a097-69f03e4304a8.jpeg", alt: "Guia local" },
+      { id: 13, image: "/img/tourSingle/1/guias/novosguias/98e7f28c-b16d-4977-8163-dc900adf0030.jpeg", alt: "Guia local" },
+      { id: 14, image: "/img/tourSingle/1/guias/novosguias/177ef193-4a13-4b78-b666-51b8947674eb.jpeg", alt: "Guia local" },
+      { id: 15, image: "/img/tourSingle/1/guias/novosguias/0400b538-0906-4bb8-9181-db3d0b7507be.jpeg", alt: "Guia local" },
+      { id: 16, image: "/img/tourSingle/1/guias/novosguias/5686a93d-eff5-4584-8df0-6af0ca59f8d4.jpeg", alt: "Guia local" },
+      { id: 17, image: "/img/tourSingle/1/guias/novosguias/5918e794-a40c-4eb9-8922-8be3ee83a772.jpeg", alt: "Guia local" },
+      { id: 18, image: "/img/tourSingle/1/guias/novosguias/8379e7cd-dc78-465c-9c04-ea50f11c1385.jpeg", alt: "Guia local" },
+      { id: 19, image: "/img/tourSingle/1/guias/novosguias/81754af8-7c36-4b7d-bda7-8a86341c710a.jpeg", alt: "Guia local" },
+      { id: 20, image: "/img/tourSingle/1/guias/novosguias/5317116c-019c-48f2-9142-1d383cf4d17f.jpeg", alt: "Guia local" },
+      { id: 21, image: "/img/tourSingle/1/guias/novosguias/37812775-1189-469f-bbe2-1705babe5851.jpeg", alt: "Guia local" },
+      { id: 22, image: "/img/tourSingle/1/guias/novosguias/b0bd429a-b6f4-4452-b627-93115cd2820b.jpeg", alt: "Guia local" },
+      { id: 23, image: "/img/tourSingle/1/guias/novosguias/d21f3aac-cc90-4e25-91a3-4c8616dc979d.jpeg", alt: "Guia local" },
+      { id: 24, image: "/img/tourSingle/1/guias/novosguias/e294e68b-5303-46da-9f15-2f8c84fd0999.jpeg", alt: "Guia local" },
+      { id: 25, image: "/img/tourSingle/1/guias/novosguias/fa0a177e-ef3f-4b6e-bf87-9f1fc5026ce1 (1).jpeg", alt: "Guia local" },
+      { id: 26, image: "/img/tourSingle/1/guias/novosguias/fa0a177e-ef3f-4b6e-bf87-9f1fc5026ce1.jpeg", alt: "Guia local" },
+      { id: 27, image: "/img/tourSingle/1/guias/novosguias/WhatsApp Image 2026-04-18 at 08.20.07.jpeg", alt: "Guia local" }
     ],
 
     // Itinerário específico para o tour
@@ -143,7 +105,7 @@ export const tourData = [
     metaDescription: "Discover Lisbon's Chiado and Bairro Alto with tuk-tuk tour. Historic cafes, art galleries, and panoramic city viewpoints.",
 
     // ✅ BASIC INFORMATION
-    imageSrc: "/img/tourSingle/1/guias/luiz.jpg",
+    imageSrc: "/img/tourSingle/1/guias/novosguias/1d9af6e2-e756-475d-b4d6-c503feec7b4a.jpeg",
     imageAlt: "Tour Chiado e Bairro Alto com guia",
     location: "Lisbon, Portugal",
     title: "Tour Chiado & Bairro Alto - Lisbon's Bohemian Soul",
@@ -222,7 +184,7 @@ export const tourData = [
     metaDescription: "Explore Belém's UNESCO sites with tuk-tuk tour. Jerónimos Monastery, Belém Tower, and authentic Pastéis de Belém tasting.",
 
     // ✅ BASIC INFORMATION
-    imageSrc: "/img/tourSingle/1/guias/rafabelem.jpeg",
+    imageSrc: "/img/tourSingle/1/guias/novosguias/1ded7030-b683-49d9-81da-6325ef89a12d.jpeg",
     imageAlt: "Tour de Belem com guia local",
     location: "Lisbon, Portugal",
     title: "Tour Belém - Discover Portugal's Golden Age of Discoveries",
@@ -321,7 +283,7 @@ export const tourData = [
     metaDescription: "Complete Lisbon experience with full-day tuk-tuk tour. Belém, Alfama, city center, and Tagus River kayaking included.",
 
     // ✅ BASIC INFORMATION
-    imageSrc: "/img/tourSingle/1/guias/neguinho2.jpg",
+    imageSrc: "/img/tourSingle/1/guias/novosguias/6e88d21a-96ff-4dde-b6b3-cf76f54b90b3.jpeg",
     imageAlt: "Tour de dia completo com guia",
     location: "Lisbon, Portugal",
     title: "Lisbon Full Day - Complete City Immersive Experience",
