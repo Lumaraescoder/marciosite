@@ -4121,14 +4121,14 @@ h6 {
 }
 
 .hero.-type-7 .hero__shape {
-  position: absolute;
+  /* position: absolute;
   bottom: 0;
   left: 0;
   right: 0;
   height: 80px;
   background-color: #FEF7F4;
   border-radius: 80px 80px 0 0;
-  z-index: 5;
+  z-index: 5; */
 }
 
 .hero.-type-7 .hero__content {
