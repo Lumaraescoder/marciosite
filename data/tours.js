@@ -37,7 +37,7 @@ export const tourData = [
     // GALLERY COMMENTED FOR NEW GUIDES IN SINGLE PAGES
     gallery: [
       { id: 1, image: "/img/tourSingle/1/guias/novosguias/0c403742-5481-455d-aff6-b766bcea3be2.jpeg", alt: "Guia local" },
-      { id: 2, image: "/img/tourSingle/1/guias/novosguias/1d9af6e2-e756-475d-b4d6-c503feec7b4a.jpeg", alt: "Guia local" },
+      { id: 2, image: "/img/tourSingle/1/guias/novosguias/sedelisboa.jpg", alt: "Guia local" },
       { id: 3, image: "/img/tourSingle/1/guias/novosguias/1ded7030-b683-49d9-81da-6325ef89a12d.jpeg", alt: "Guia local" },
       { id: 4, image: "/img/tourSingle/1/guias/novosguias/6e88d21a-96ff-4dde-b6b3-cf76f54b90b3 (1).jpeg", alt: "Guia local" },
       { id: 5, image: "/img/tourSingle/1/guias/novosguias/6e88d21a-96ff-4dde-b6b3-cf76f54b90b3.jpeg", alt: "Guia local" },
@@ -313,23 +313,23 @@ export const tourData = [
     gallery: [
       {
         id: 1,
-        image: "/img/tourSingle/1/guias/neguinho2.jpg",
-        alt: "Experiencia de dia completo"
+        image: "/img/tourSingle/1/guias/novosguias/0c403742-5481-455d-aff6-b766bcea3be2.jpeg",
+        alt: "Guia local"
       },
       {
         id: 2,
-        image: "/img/tourSingle/1/guias/neguinho3.jpeg",
-        alt: "Clientes no tour de dia inteiro"
+        image: "/img/tourSingle/1/guias/novosguias/sedelisboa.jpg",
+        alt: "Sé de Lisboa"
       },
       {
         id: 3,
-        image: "/img/tourSingle/1/guias/mulher-copy.jpg",
-        alt: "Passeio personalizado em Lisboa"
+        image: "/img/tourSingle/1/guias/novosguias/fernandopessoachiado.jpg",
+        alt: "Guia local"
       },
       {
         id: 4,
-        image: "/img/tourSingle/1/guias/mulher-5.jpeg",
-        alt: "Guia e clientes no city tour"
+        image: "/img/tourSingle/1/guias/novosguias/torredebelem.jpg",
+        alt: "Guia local"
       }
     ],
 

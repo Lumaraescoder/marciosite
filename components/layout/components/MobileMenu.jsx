@@ -140,7 +140,7 @@ export default function MobileMenu({ mobileMenuOpen, setMobileMenuOpen }) {
 
           <div className="text-20 lh-12 fw-500 mt-20">
             <div>Book a tour By phone </div>
-            <div className="text-accent-1">+351 933 653 296</div>
+            <div className="text-accent-1">915 510 862</div>
           </div>
 
           <div className="mt-20">
