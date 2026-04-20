@@ -218,7 +218,7 @@ export const tourData = [
       },
       {
         id: 2,
-        image: "/img/tourSingle/1/torredebelem.jpg",
+        image: "/img/tourSingle/1/guias/novosguias/torredebelem.jpg",
         alt: "Torre de Belém"
       },
       {
