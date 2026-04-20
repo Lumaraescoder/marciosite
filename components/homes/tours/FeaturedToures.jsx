@@ -8,7 +8,7 @@ import { useTranslation } from "../../../hooks/useLang";
 export default function FeaturedToures() {
   const { t } = useTranslation();
   const translatedTours = useTranslatedTours();
-  const pricePerPerson = 30;
+  const pricePerPerson = 80;
 
   return (
     <section className="layout-pt-xl layout-pb-xl bg-accent-1-05">
@@ -21,7 +21,7 @@ export default function FeaturedToures() {
 
         <div className="row y-gap-30 justify-between pt-40 sm:pt-20 mobile-css-slider -w-300">
           {translatedTours.map((elm, i) => {
-            const isFixedPriceTour = [7, 8].includes(elm.id);
+            const isFixedPriceTour = [4].includes(elm.id);
             const displayPrice = isFixedPriceTour ? elm.price : pricePerPerson;
             return (
               <div key={i} className="col-lg-3 col-md-6">

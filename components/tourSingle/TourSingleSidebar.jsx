@@ -15,35 +15,30 @@ function TourSingleSidebarContent({ tour }) {
   const fixedPrice = tour?.price || 0;
 
   // Preço base exibido na UI (não usado para cálculo real)
-  const pricePerPerson = 30;
+  const pricePerHourPerTuk = 80;
 
-  // Função reutilizável para cálculo de preço
+  // Função reutilizável para cálculo de preço por tier
   function calculatePrice(persons, hours) {
-    const factors = {
-      1: 0.93,
-      2: 0.83,
-      3: 0.73,
-      4: 0.63,
-      5: 0.56,
-      6: 0.5,
-      7: 0.46,
-    };
-    const base = persons * hours * 30;
-    const factor = factors[hours] || factors[7];
-    let adjusted = base * factor;
-    if (persons === 1) {
-      adjusted *= 1.2;
-    }
-    return Math.round(adjusted);
+    return pricePerTier * Math.ceil(persons / PERSONS_PER_TUK);
   }
 
   const MIN_PERSONS = 2;
   const MAX_PERSONS = 50;
   const MIN_HOURS = 1;
-  const PERSONS_PER_TUK = 5;
+  const PERSONS_PER_TUK = 6;
+  const pricingTiers = {
+    1: 80,
+    1.5: 150,
+    2: 175,
+    3: 280,
+    4: 320,
+  };
+
+  const [selectedTier, setSelectedTier] = useState("1");
+  const hours = parseFloat(selectedTier);
+  const pricePerTier = pricingTiers[selectedTier];
 
   const [persons, setPersons] = useState(MIN_PERSONS);
-  const [hours, setHours] = useState(MIN_HOURS);
   const [tukCount, setTukCount] = useState(1);
   const [selectedDate, setSelectedDate] = useState("");
   const [selectedTime, setSelectedTime] = useState("");
@@ -192,7 +187,7 @@ function TourSingleSidebarContent({ tour }) {
         <div className="d-flex items-center">
           <div>{isFixedPriceTour ? t("fixed_price") : t("sidebar_from")}</div>
           <div className="text-20 fw-500 ml-10">
-            {t("currency_eur")} {isFixedPriceTour ? fixedPrice : pricePerPerson}
+            {t("currency_eur")} {isFixedPriceTour ? fixedPrice : pricePerTier}
           </div>
           {!isFixedPriceTour && (
             <div className="text-14 text-light-2 ml-10">
@@ -336,10 +331,15 @@ function TourSingleSidebarContent({ tour }) {
                   <div className="d-flex items-center js-counter">
                     <button
                       onClick={() =>
-                        setHours((currentHours) =>
-                          currentHours > MIN_HOURS
-                            ? currentHours - 1
-                            : currentHours,
+                        setSelectedTier(
+                          Object.keys(pricingTiers)[
+                            Math.max(
+                              0,
+                              parseInt(
+                                Object.keys(pricingTiers).indexOf(selectedTier),
+                              ) - 1,
+                            )
+                          ],
                         )
                       }
                       className="button size-30 border-1 rounded-full"
@@ -348,13 +348,20 @@ function TourSingleSidebarContent({ tour }) {
                     </button>
 
                     <div className="flex-center ml-10 mr-10">
-                      <div className="text-14 size-20">{hours}</div>
+                      <div className="text-14 size-20">
+                        {hours}h ({t("currency_eur")}
+                        {pricePerTier})
+                      </div>
                     </div>
 
                     <button
-                      onClick={() =>
-                        setHours((currentHours) => currentHours + 1)
-                      }
+                      onClick={() => {
+                        const tiers = Object.keys(pricingTiers);
+                        const currentIndex = tiers.indexOf(selectedTier);
+                        if (currentIndex < tiers.length - 1) {
+                          setSelectedTier(tiers[currentIndex + 1]);
+                        }
+                      }}
                       className="button size-30 border-1 rounded-full"
                     >
                       <i className="icon-plus text-10"></i>
