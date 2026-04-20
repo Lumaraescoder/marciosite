@@ -128,7 +128,12 @@ export default function Hero7() {
                 className="text-8xl md:text-9xl lg:text-[15rem] xl:text-[18rem] 2xl:text-[20rem] fw-700 text-white text-center mt-50 -tracking-wide drop-shadow-2xl  mt-5 leading-none"
                 style={{ textShadow: "2px 2px 4px rgba(0,0,0,0.5)" }}
               >
-                Sightseeing tours by tuk tuk
+                Sightseeing tours by tuk tuk <br /> by
+                <br /> Kika Santos
+                <br />
+                &
+                <br />
+                Marcio Nascimento
                 <br />
               </h1>
 

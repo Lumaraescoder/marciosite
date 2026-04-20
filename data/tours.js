@@ -145,11 +145,21 @@ export const tourData = [
       },
       {
         id: 3,
+        image: "/img/tourSingle/1/guias/novosguias/praçadocomerciochiado.jpg",
+        alt: "Praça do Comércio Chiado"
+      },
+      {
+        id: 3,
+        image: "/img/tourSingle/1/guias/novosguias/livrariamaisantigadomundochiado.jpg",
+        alt: "Praça do Comércio Chiado"
+      },
+      {
+        id: 4,
         image: "/img/tourSingle/1/guias/novosguias/6e88d21a-96ff-4dde-b6b3-cf76f54b90b3.jpeg",
         alt: "Guia novo"
       },
       {
-        id: 4,
+        id: 5,
         image: "/img/tourSingle/1/guias/novosguias/6fc3bdbf-2365-4187-90d7-46fc20863263.jpeg",
         alt: "Guia novo"
       }
