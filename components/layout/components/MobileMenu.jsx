@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useRouter, usePathname } from "next/navigation";
 import React from "react";
+import LanguageSelector from "./Currency";
 
 export default function MobileMenu({ mobileMenuOpen, setMobileMenuOpen }) {
   const router = useRouter();
@@ -141,8 +142,11 @@ export default function MobileMenu({ mobileMenuOpen, setMobileMenuOpen }) {
             <div>Book a tour By phone </div>
             <div className="text-accent-1">+351 933 653 296</div>
           </div>
-        </div>{" "}
-        *
+
+          <div className="mt-20">
+            <LanguageSelector />
+          </div>
+        </div>
       </div>
     </div>
   );

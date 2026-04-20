@@ -171,7 +171,7 @@ export const tourData = [
     ],
     meetingPoint: "Luís de Camões Square, in the heart of Chiado",
     difficulty: "Easy - mostly flat terrain with some hills",
-    groupSize: "5 people per tuk",
+    groupSize: "6 people per tuk",
     availability: "Daily at 11:00 AM and 4:00 PM",
     languages: ["English", "Portuguese", "French"]
   },
@@ -270,7 +270,7 @@ export const tourData = [
     ],
     meetingPoint: "Belém Cultural Center main entrance",
     difficulty: "Easy - accessible routes",
-    groupSize: "5 people per tuk",
+    groupSize: "6",
     availability: "Daily at 9:30 AM and 2:30 PM",
     languages: ["English", "Portuguese", "Spanish"]
   },

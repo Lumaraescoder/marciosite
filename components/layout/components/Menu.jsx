@@ -3,6 +3,7 @@
 import React, { useEffect, useState } from "react";
 import { usePathname, useRouter } from "next/navigation";
 import { useTranslation } from "../../../hooks/useLang";
+import LanguageSelector from "./Currency"; // LanguageSelector renamed from Currency
 import Link from "next/link";
 
 export default function Menu() {

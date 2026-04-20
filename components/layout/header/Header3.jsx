@@ -2,7 +2,7 @@
 
 import React, { useEffect, useState } from "react";
 import Menu from "../components/Menu";
-import Currency from "../components/Currency";
+/* LanguageSelector now in Menu.jsx, no duplicate import needed */
 import MobileMenu from "../components/MobileMenu";
 import Image from "next/image";
 import Link from "next/link";
@@ -58,7 +58,7 @@ export default function Header3() {
 
           {/* Currency Desktop */}
           <div className="header__right">
-            <Currency />
+            {/* LanguageSelector in Menu.jsx */}
           </div>
         </div>
       </header>

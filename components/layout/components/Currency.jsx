@@ -13,6 +13,7 @@ const languages = [
 ];
 
 export default function LanguageSelector({ parentClass }) {
+  const parentClassName = parentClass || "";
   const { lang, setLang } = useTranslation();
   const [openDropdown, setOpenDropdown] = useState("");
   const [selectedLanguage, setSelectedLanguage] = useState("Português");

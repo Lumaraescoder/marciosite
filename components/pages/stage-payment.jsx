@@ -116,7 +116,7 @@ function Stage2PaymentContent({
               name: cardholderName,
             },
           },
-        }
+        },
       );
 
       if (error) {
@@ -157,13 +157,7 @@ function Stage2PaymentContent({
     <div>
       <h2 className="text-30 md:text-24 fw-700 mb-30">{t("stage2_title")}</h2>
 
-      <div className="d-flex flex-wrap gap-12 mb-20">
-        {["PayPal", "G Pay", "Apple Pay"].map((method) => (
-          <div key={method} className="payment-method-badge">
-            {method}
-          </div>
-        ))}
-      </div>
+      {/* Payment methods badges removed */}
 
       <div className="tabs -pills-3 js-tabs">
         <div className="tabs__controls row x-gap-10 y-gap-10 js-tabs-controls">

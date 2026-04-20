@@ -36,7 +36,7 @@ export default function FeaturesOne() {
   ];
 
   return (
-    <section className="pt-[150px] pb-[100px]">
+    <section className="pt-[51px] pb-[63px]">
       <div className="container">
         <div className="row">
           <div className="col-auto">
