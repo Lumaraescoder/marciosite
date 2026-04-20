@@ -140,8 +140,8 @@ export const tourData = [
       },
       {
         id: 2,
-        image: "/img/tourSingle/1/guias/novosguias/1ded7030-b683-49d9-81da-6325ef89a12d.jpeg",
-        alt: "Guia novo"
+        image: "/img/tourSingle/1/guias/novosguias/fernandopessoachiado.jpg",
+        alt: "Fernando Pessoa Chiado"
       },
       {
         id: 3,
@@ -218,8 +218,8 @@ export const tourData = [
       },
       {
         id: 2,
-        image: "/img/tourSingle/1/guias/novosguias/1ded7030-b683-49d9-81da-6325ef89a12d.jpeg",
-        alt: "Guia novo"
+        image: "/img/tourSingle/1/torredebelem.jpg",
+        alt: "Torre de Belém"
       },
       {
         id: 3,
