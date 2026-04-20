@@ -60,14 +60,14 @@ function FooterTwoContent() {
                     <i className="icon-headphone text-50"></i>
                   </div> */}
 
-                  {/* <div className="col-auto">
+                  <div className="col-auto">
                     <div className="text-20 fw-500">
                       {t("footer_book_by_call")}
                       <span className="text-accent-1 ml-10">
-                        +351 928 346 074
+                        +351 933 653 296
                       </span>
                     </div>
-                  </div> */}
+                  </div>
                 </div>
 
                 {/* <div className="col-auto">

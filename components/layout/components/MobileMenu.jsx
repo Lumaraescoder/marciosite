@@ -57,7 +57,6 @@ export default function MobileMenu({ mobileMenuOpen, setMobileMenuOpen }) {
             <i className="icon-cross text-10"></i>
           </button>
         </div>
-
         <div className="menu__content">
           <ul
             className="menuNav js-navList -is-active"
@@ -136,15 +135,15 @@ export default function MobileMenu({ mobileMenuOpen, setMobileMenuOpen }) {
             </li> */}
           </ul>
         </div>
-
-        {/* <div className="menu__footer">
+        <div className="menu__footer">
           <i className="icon-headphone text-50"></i>
 
           <div className="text-20 lh-12 fw-500 mt-20">
             <div>Book a tour By phone </div>
-            <div className="text-accent-1">+351 928346074</div>
+            <div className="text-accent-1">+351 933 653 296</div>
           </div>
-        </div> */}
+        </div>{" "}
+        *
       </div>
     </div>
   );
