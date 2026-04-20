@@ -30,25 +30,21 @@ export default function BookingPages() {
     clientSecret: "",
   });
 
-  // Função de cálculo de preço conforme regras fornecidas
+  // Função de cálculo de preço atualizada com tiers (80€/tuk base)
   function calculateTourPrice(persons, hours) {
-    const factors = {
-      1: 0.93,
-      2: 0.83,
-      3: 0.73,
-      4: 0.63,
-      5: 0.56,
-      6: 0.5,
-      7: 0.46,
+    const PERSONS_PER_TUK = 6;
+    const pricingTiers = {
+      1: 80,
+      1.5: 150,
+      2: 175,
+      3: 280,
+      4: 320,
     };
-    const basePrice = persons * hours * 30;
-    const factor = factors[hours] || factors[7];
-    let adjustedPrice = basePrice * factor;
-    if (persons === 1) {
-      adjustedPrice *= 1.2;
-    }
-    const finalPrice = Math.round(adjustedPrice);
-    return finalPrice;
+    const tierKey =
+      Object.keys(pricingTiers).find((key) => parseFloat(key) === hours) || "1";
+    const pricePerTuk = pricingTiers[tierKey];
+    const tuksNeeded = Math.ceil(persons / PERSONS_PER_TUK);
+    return pricePerTuk * tuksNeeded;
   }
 
   useEffect(() => {
