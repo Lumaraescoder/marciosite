@@ -61,6 +61,13 @@ export default function ContactForm() {
               Leave us your info
             </h2>
 
+            <div className="text-center mb-40">
+              <div className="text-18 fw-500 mb-10">
+                kmtourbookings@gmail.com
+              </div>
+              <div className="text-14 text-light-1">Or fill the form below</div>
+            </div>
+
             {/* Mensagem de sucesso SIMPLES */}
             {showSuccess && (
               <div className="bg-green-500 text-white p-3 rounded mb-4 text-center">
