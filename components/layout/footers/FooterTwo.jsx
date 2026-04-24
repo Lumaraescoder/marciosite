@@ -63,7 +63,9 @@ function FooterTwoContent() {
                   <div className="col-auto">
                     <div className="text-20 fw-500">
                       {t("footer_book_by_call")}
-                      <span className="text-accent-1 ml-10">915 510 862</span>
+                      <br />
+                      <span className="text-accent-1 ml-10">+351 915 510 862</span><br />
+                      <span className="text-accent-1 ml-10">+351 933 653 296  </span>
                       <div className="text-16 mt-10">
                         kmtourbookings@gmail.com
                       </div>

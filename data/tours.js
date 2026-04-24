@@ -136,7 +136,7 @@ export const tourData = [
     gallery: [
       {
         id: 1,
-        image: "/img/tourSingle/1/guias/novosguias/0c403742-5481-455d-aff6-b766bcea3be2.jpeg",
+        image: "/img/tourSingle/1/guias/novosguias/elevador-de-santa-justa.jpg",
         alt: "Guia novo"
       },
       {

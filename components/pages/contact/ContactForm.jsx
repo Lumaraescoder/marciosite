@@ -63,7 +63,8 @@ export default function ContactForm() {
 
             <div className="text-center mb-40">
               <div className="text-18 fw-500 mb-10">
-                📧 kmtourbookings@gmail.com | 📞 915 510 862
+                📧 kmtourbookings@gmail.com | 📞 +351 915 510 862 <br /> 
+                📞 +351 933 653 296
               </div>
               <div className="text-14 text-light-1">Or fill the form below</div>
             </div>
