@@ -88,7 +88,7 @@ export default function Hero7() {
           <Image
             width={1920}
             height={960}
-            src="/img/hero/7/capa1.png"
+            src="/img/hero/7/marciofoto.jpeg"
             alt="background"
             className="w-full h-full object-cover"
             style={{ objectPosition: "center 60%" }}
@@ -98,7 +98,7 @@ export default function Hero7() {
           <Image
             width={768}
             height={1024}
-            src="/img/hero/7/capa2.png"
+            src="/img/hero/7/marciofoto.jpeg"
             alt="background mobile"
             className="w-full h-full object-cover"
           />
