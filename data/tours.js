@@ -36,12 +36,12 @@ export const tourData = [
     // ✅ OPTIMIZED GALLERY
     // GALLERY COMMENTED FOR NEW GUIDES IN SINGLE PAGES
     gallery: [
-      { id: 1, image: "/img/tourSingle/1/guias/novosguias/sedelisboa.jpg", alt: "Guia local" },
+      { id: 1, image: "/img/tourSingle/1/guias/novosguias/elevador-de-santa-justa.jpg", alt: "Guia local" },
 
       // { id: 1, image: "/img/tourSingle/1/guias/novosguias/0c403742-5481-455d-aff6-b766bcea3be2.jpeg", alt: "Guia local" },
       { id: 3, image: "/img/tourSingle/1/guias/novosguias/0d0edcd0-95c0-4825-bdc4-805c966e5092.jpeg", alt: "Guia local" },
       // { id: 4, image: "/img/tourSingle/1/guias/novosguias/6e88d21a-96ff-4dde-b6b3-cf76f54b90b3 (1).jpeg", alt: "Guia local" },
-      { id: 5, image: "/img/tourSingle/1/guias/novosguias/parlamento.jpg", alt: "Guia local" },
+      { id: 5, image: "/img/tourSingle/1/guias/novosguias/praçadocomercio.jpg", alt: "Guia local" },
       { id: 6, image: "/img/tourSingle/1/guias/novosguias/6fc3bdbf-2365-4187-90d7-46fc20863263.jpeg", alt: "Guia local" },
       { id: 7,  image: "/img/tourSingle/1/guias/novosguias/7fb2011d-694c-4fd5-b1c4-091c545b768e (1).jpeg", alt: "Guia local" },
       { id: 8,  image: "/img/tourSingle/1/guias/novosguias/7fb2011d-694c-4fd5-b1c4-091c545b768e.jpeg", alt: "Guia local" },
