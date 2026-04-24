@@ -98,7 +98,7 @@ export default function Hero7() {
           <Image
             width={768}
             height={1024}
-            src="/img/hero/7/marciofoto.jpeg"
+            src="/img/hero/7/marciofoto.jpeg  "
             alt="background mobile"
             className="w-full h-full object-cover"
           />
