@@ -23,7 +23,6 @@ export default function BookingPages() {
     tourImage: "/img/tourSingle/booking/1.png",
   });
 
-
   // Função de cálculo de preço atualizada com tiers (80€/tuk base)
   function calculateTourPrice(persons, hours) {
     const PERSONS_PER_TUK = 6;
