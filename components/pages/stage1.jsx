@@ -7,7 +7,7 @@ import { LanguageProvider } from "../../hooks/useLang";
 // Componente principal
 function Stage1PersonalInfoContent({ onSuccess, bookingData }) {
   const { t } = useTranslation();
-  const [state, handleSubmit] = useForm("mldaqgrn");
+  const [state, handleSubmit] = useForm("xbdqklov");
   const [formErrors, setFormErrors] = useState({});
   const [touched, setTouched] = useState({});
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -43,7 +43,7 @@ function Stage1PersonalInfoContent({ onSuccess, bookingData }) {
 
       return errors;
     },
-    [t]
+    [t],
   );
 
   const handleBlur = useCallback(
@@ -52,7 +52,7 @@ function Stage1PersonalInfoContent({ onSuccess, bookingData }) {
       const errors = validateField(fieldName, e.target.value);
       setFormErrors((prev) => ({ ...prev, ...errors }));
     },
-    [validateField]
+    [validateField],
   );
 
   const handleChange = useCallback(
@@ -68,7 +68,7 @@ function Stage1PersonalInfoContent({ onSuccess, bookingData }) {
         return updated;
       });
     },
-    [validateField]
+    [validateField],
   );
 
   // Função segura para salvar no localStorage
@@ -126,8 +126,8 @@ function Stage1PersonalInfoContent({ onSuccess, bookingData }) {
         setTouched(
           Object.keys(finalErrors).reduce(
             (acc, key) => ({ ...acc, [key]: true }),
-            {}
-          )
+            {},
+          ),
         );
 
         // Smooth scroll to first error - versão segura
@@ -186,9 +186,21 @@ function Stage1PersonalInfoContent({ onSuccess, bookingData }) {
       <h2 className="text-30 md:text-24 fw-700">{t("stage1_title")}</h2>
 
       <div className="row y-gap-30 contactForm pt-30">
-        <input type="hidden" name="bookingDate" value={bookingData?.date || ""} />
-        <input type="hidden" name="bookingTime" value={bookingData?.time || ""} />
-        <input type="hidden" name="bookingHours" value={bookingData?.hours || ""} />
+        <input
+          type="hidden"
+          name="bookingDate"
+          value={bookingData?.date || ""}
+        />
+        <input
+          type="hidden"
+          name="bookingTime"
+          value={bookingData?.time || ""}
+        />
+        <input
+          type="hidden"
+          name="bookingHours"
+          value={bookingData?.hours || ""}
+        />
 
         <div className="col-md-6">
           <div className="form-input">
@@ -222,7 +234,9 @@ function Stage1PersonalInfoContent({ onSuccess, bookingData }) {
           <div className="form-input">
             <input
               type="text"
-              value={bookingData?.hours ? `${bookingData.hours} ${t("hours")}` : ""}
+              value={
+                bookingData?.hours ? `${bookingData.hours} ${t("hours")}` : ""
+              }
               readOnly
               disabled
             />

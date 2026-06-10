@@ -1,16 +1,10 @@
 "use client";
 import React, { useState, useEffect } from "react";
 import { useSearchParams } from "next/navigation";
-import { loadStripe } from "@stripe/stripe-js";
-import { Elements } from "@stripe/react-stripe-js";
 import Stage1PersonalInfo from "./stage1";
 import Stage3Confirmation from "./stage4-confirmation";
 import BookingSidebar from "./bookingsidebar";
 import Stage2Payment from "./stage-payment";
-
-const stripePromise = loadStripe(
-  process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY,
-);
 
 export default function BookingPages() {
   const [bookingStage, setBookingStage] = useState(1);
@@ -27,8 +21,8 @@ export default function BookingPages() {
     pricePerPerson: "0",
     tourTitle: "Tour",
     tourImage: "/img/tourSingle/booking/1.png",
-    clientSecret: "",
   });
+
 
   // Função de cálculo de preço atualizada com tiers (80€/tuk base)
   function calculateTourPrice(persons, hours) {
@@ -71,38 +65,6 @@ export default function BookingPages() {
       };
 
       setBookingData(bookingDataObj);
-
-      if (totalPrice > 0) {
-        fetch("/api/create-payment-intent", {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify({
-            amount: Math.round(totalPrice * 100),
-            bookingData: bookingDataObj,
-          }),
-        })
-          .then((res) => {
-            if (!res.ok) {
-              throw new Error(`HTTP error! status: ${res.status}`);
-            }
-            return res.json();
-          })
-          .then((data) => {
-            setBookingData((prev) => ({
-              ...prev,
-              clientSecret: data.clientSecret,
-            }));
-          })
-          .catch((error) => {
-            console.error("❌ Fetch error:", error);
-            setBookingData((prev) => ({
-              ...prev,
-              clientSecret: "pi_mock_fallback_secret_xyz123",
-            }));
-          });
-      }
     }
   }, [searchParams]);
 
@@ -135,30 +97,13 @@ export default function BookingPages() {
           />
         );
       case 2:
-        return bookingData.clientSecret ? (
-          <Elements
-            stripe={stripePromise}
-            options={{
-              clientSecret: bookingData.clientSecret,
-              appearance: {
-                theme: "stripe",
-                variables: {
-                  colorPrimary: "#0066cc",
-                },
-              },
-            }}
-          >
-            <Stage2Payment
-              bookingData={bookingData}
-              onPaymentSuccess={handlePaymentSuccess}
-              isProcessing={isProcessingPayment}
-              onProcessingComplete={() => setIsProcessingPayment(false)}
-            />
-          </Elements>
-        ) : (
-          <div className="text-center py-5">
-            <p>Loading payment form...</p>
-          </div>
+        return (
+          <Stage2Payment
+            bookingData={bookingData}
+            onPaymentSuccess={handlePaymentSuccess}
+            isProcessing={isProcessingPayment}
+            onProcessingComplete={() => setIsProcessingPayment(false)}
+          />
         );
       case 3:
         return <Stage3Confirmation bookingData={bookingData} />;

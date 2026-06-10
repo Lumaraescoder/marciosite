@@ -44,8 +44,8 @@ function BookingSidebarContent({
             <div className="fw-500">{t("sidebar_persons")}</div>
             <div className="">
               {bookingData.persons} x {bookingData.hours || 1} {t("hours")} x{" "}
-              {t("currency_eur")} {bookingData.pricePerPerson} = {t("currency_eur")}{" "}
-              {bookingData.totalPrice}
+              {t("currency_eur")} {bookingData.pricePerPerson} ={" "}
+              {t("currency_eur")} {bookingData.totalPrice}
             </div>
           </div>
         </div>
@@ -56,7 +56,8 @@ function BookingSidebarContent({
           <div className="d-flex justify-between">
             <div className="fw-500">
               {t("sidebar_service_per_person")} ({bookingData.persons}{" "}
-              {t("sidebar_persons_count")} x {bookingData.hours || 1} {t("hours")})
+              {t("sidebar_persons_count")} x {bookingData.hours || 1}{" "}
+              {t("hours")})
             </div>
             <div className="">
               {t("currency_eur")} {bookingData.totalPrice}
@@ -76,7 +77,7 @@ function BookingSidebarContent({
         </div>
       </div>
 
-      {isPaymentStage && (
+      {/* {isPaymentStage && (
         <div className="mt-30">
           <button
             className="button -md -dark-1 bg-accent-1 text-white col-12"
@@ -89,7 +90,7 @@ function BookingSidebarContent({
             <i className="icon-arrow-top-right text-16 ml-10"></i>
           </button>
         </div>
-      )}
+      )} */}
     </div>
   );
 }
