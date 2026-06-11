@@ -81,8 +81,8 @@ export async function POST(request) {
         },
       ],
       application_context: {
-        return_url: `${process.env.NEXT_PUBLIC_APP_URL || "http://localhost:3000"}/booking-success`,
-        cancel_url: `${process.env.NEXT_PUBLIC_APP_URL || "http://localhost:3000"}/booking-pages?persons=${bookingData.persons}&hours=${bookingData.hours}&date=${encodeURIComponent(bookingData.date)}&time=${encodeURIComponent(bookingData.time)}&tourTitle=${encodeURIComponent(bookingData.tourTitle)}&tourImage=${encodeURIComponent(bookingData.tourImage)}`,
+        return_url: `${process.env.NEXT_PUBLIC_APP_URL || "www.kmhillsadventures.com"}/booking-success`,
+        cancel_url: `${process.env.NEXT_PUBLIC_APP_URL || "www.kmhillsadventures.com"}/booking-pages?persons=${bookingData.persons}&hours=${bookingData.hours}&date=${encodeURIComponent(bookingData.date)}&time=${encodeURIComponent(bookingData.time)}&tourTitle=${encodeURIComponent(bookingData.tourTitle)}&tourImage=${encodeURIComponent(bookingData.tourImage)}`,
         brand_name: "ViaTour",
         locale: "pt-BR",
         user_action: "PAY_NOW",
