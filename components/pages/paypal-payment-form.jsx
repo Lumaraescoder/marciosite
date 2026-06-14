@@ -15,10 +15,17 @@ export default function PayPalPaymentComponent({
 
   // Carrega o PayPal Buttons Script
   useEffect(() => {
+    // Depuração: mostra no console qual valor do client-id foi embutido no build
+    const _paypalPublicId = process.env.NEXT_PUBLIC_PAYPAL_CLIENT_ID;
+    try {
+      // eslint-disable-next-line no-console
+      console.log("DEBUG: NEXT_PUBLIC_PAYPAL_CLIENT_ID=", _paypalPublicId);
+    } catch (e) {}
+
     // Verifica se o client id do PayPal está disponível (build-time)
-    if (!process.env.NEXT_PUBLIC_PAYPAL_CLIENT_ID) {
+    if (!_paypalPublicId) {
       setErrorMessage(
-        "PayPal client ID not configured. Configure NEXT_PUBLIC_PAYPAL_CLIENT_ID in production."
+        `PayPal client ID not configured. Configure NEXT_PUBLIC_PAYPAL_CLIENT_ID in production. (value: ${_paypalPublicId})`
       );
       setIsLoading(false);
       return;
