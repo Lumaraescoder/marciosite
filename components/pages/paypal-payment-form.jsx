@@ -15,6 +15,15 @@ export default function PayPalPaymentComponent({
 
   // Carrega o PayPal Buttons Script
   useEffect(() => {
+    // Verifica se o client id do PayPal está disponível (build-time)
+    if (!process.env.NEXT_PUBLIC_PAYPAL_CLIENT_ID) {
+      setErrorMessage(
+        "PayPal client ID not configured. Configure NEXT_PUBLIC_PAYPAL_CLIENT_ID in production."
+      );
+      setIsLoading(false);
+      return;
+    }
+
     // Remove script anterior se existir
     const existingScript = document.getElementById("paypal-checkout-script");
     if (existingScript) {
