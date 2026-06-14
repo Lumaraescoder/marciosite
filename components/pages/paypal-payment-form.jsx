@@ -25,7 +25,7 @@ export default function PayPalPaymentComponent({
     // Verifica se o client id do PayPal está disponível (build-time)
     if (!_paypalPublicId) {
       setErrorMessage(
-        `PayPal client ID not configured. Configure NEXT_PUBLIC_PAYPAL_CLIENT_ID in production. (value: ${_paypalPublicId})`
+        `PayPal client ID not configured. Configure NEXT_PUBLIC_PAYPAL_CLIENT_ID in production. (value: ${_paypalPublicId})`,
       );
       setIsLoading(false);
       return;
