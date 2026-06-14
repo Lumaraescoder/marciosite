@@ -29,12 +29,12 @@ export default function RootLayout({ children }) {
         <link rel="dns-prefetch" href="https://connect.facebook.net" />
 
         {/* HREFLANG TAGS (mesma URL para todas as línguas) */}
-        <link rel="alternate" hrefLang="x-default" href="https://www.golfcolortour.com/" />
-        <link rel="alternate" hrefLang="en" href="https://www.golfcolortour.com/" />
-        <link rel="alternate" hrefLang="pt" href="https://www.golfcolortour.com/" />
-        <link rel="alternate" hrefLang="es" href="https://www.golfcolortour.com/" />
-        <link rel="alternate" hrefLang="fr" href="https://www.golfcolortour.com/" />
-        <link rel="alternate" hrefLang="de" href="https://www.golfcolortour.com/" />
+        <link rel="alternate" hrefLang="x-default" href="https://www.kmhillsadventures.com/" />
+        <link rel="alternate" hrefLang="en" href="https://www.kmhillsadventures.com/" />
+        <link rel="alternate" hrefLang="pt" href="https://www.kmhillsadventures.com/" />
+        <link rel="alternate" hrefLang="es" href="https://www.kmhillsadventures.com/" />
+        <link rel="alternate" hrefLang="fr" href="https://www.kmhillsadventures.com/" />
+        <link rel="alternate" hrefLang="de" href="https://www.kmhillsadventures.com/" />
 
         {/* SCHEMA.ORG: LOCAL BUSINESS */}
         <script
@@ -43,24 +43,24 @@ export default function RootLayout({ children }) {
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "TouristAttractionService",
-              "@id": "https://www.golfcolortour.com/#business",
+              "@id": "https://www.kmhillsadventures.com/#business",
               "name": "Golf Color Tour",
               "alternateName": "Golf Color Tuk Tuk Tours Lisbon",
               "description": "Premium Tuk Tuk tour company offering personalized guided tours through Lisbon's most iconic neighborhoods, historic sites, and panoramic viewpoints.",
-              "url": "https://www.golfcolortour.com",
+              "url": "https://www.kmhillsadventures.com",
               "logo": {
                 "@type": "ImageObject",
-                "url": "https://www.golfcolortour.com/img/general/generallogo.png",
+                "url": "https://www.kmhillsadventures.com/img/general/generallogo.png",
                 "width": 256,
                 "height": 256
               },
               "image": [
-                "https://www.golfcolortour.com/img/general/generallogo.png",
-                "https://www.golfcolortour.com/img/general/generallogo.png"
+                "https://www.kmhillsadventures.com/img/general/generallogo.png",
+                "https://www.kmhillsadventures.com/img/general/generallogo.png"
               ],
               "priceRange": "€€",
               "telephone": "+351928346074",
-              "email": "info@golfcolortour.com",
+              "email": "info@kmhillsadventures.com",
               "address": {
                 "@type": "PostalAddress",
                 "streetAddress": "Rua Example, 123",
@@ -143,7 +143,7 @@ export default function RootLayout({ children }) {
               "@context": "https://schema.org",
               "@type": "WebSite",
               "name": "Golf Color Tour",
-              "url": "https://www.golfcolortour.com/",
+              "url": "https://www.kmhillsadventures.com/",
               "description": "Premium Tuk Tuk tours in Lisbon",
               "publisher": {
                 "@type": "Organization",
@@ -162,8 +162,8 @@ export default function RootLayout({ children }) {
               "@context": "https://schema.org",
               "@type": "Organization",
               "name": "Golf Color Tour",
-              "url": "https://www.golfcolortour.com",
-              "logo": "https://www.golfcolortour.com/img/general/semfundo.png",
+              "url": "https://www.kmhillsadventures.com",
+              "logo": "https://www.kmhillsadventures.com/img/general/semfundo.png",
               "sameAs": [
                 "https://www.instagram.com/golfcolor.tuk/",
                 "https://www.getyourguide.com/golf-color-tour-s423513/",

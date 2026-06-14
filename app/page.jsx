@@ -43,19 +43,19 @@ export const metadata = {
   ],
 
   // BASE URL (CORRIGIDO - estava com easytuk.pt)
-  metadataBase: new URL("https://www.golfcolortour.com"),
+  metadataBase: new URL("https://www.kmhillsadventures.com"),
 
   // CANONICAL E ALTERNATES (Ajustado para site sem rotas)
   alternates: {
-    canonical: "https://www.golfcolortour.com/",
+    canonical: "https://www.kmhillsadventures.com/",
     // Se não tem rotas de idioma, remova ou use mesma URL
     languages: {
-      "x-default": "https://www.golfcolortour.com/",
-      en: "https://www.golfcolortour.com/",
-      pt: "https://www.golfcolortour.com/",
-      es: "https://www.golfcolortour.com/",
-      fr: "https://www.golfcolortour.com/",
-      de: "https://www.golfcolortour.com/",
+      "x-default": "https://www.kmhillsadventures.com/",
+      en: "https://www.kmhillsadventures.com/",
+      pt: "https://www.kmhillsadventures.com/",
+      es: "https://www.kmhillsadventures.com/",
+      fr: "https://www.kmhillsadventures.com/",
+      de: "https://www.kmhillsadventures.com/",
     },
   },
 
@@ -77,10 +77,10 @@ export const metadata = {
   // INFORMAÇÕES DO APP
   applicationName: "Golf Color Tour",
   generator: "Next.js",
-  authors: [
+    authors: [
     {
       name: "Golf Color Tour",
-      url: "https://www.golfcolortour.com", // CORRIGIDO
+      url: "https://www.kmhillsadventures.com", // CORRIGIDO
     },
   ],
   creator: "Golf Color Tour",
@@ -91,21 +91,21 @@ export const metadata = {
     title: "Authentic Tuk Tuk Tours in Lisbon | Golf Color Tour",
     description:
       "Discover Lisbon's hidden gems with expert-guided Tuk Tuk tours. Explore historic neighborhoods, iconic landmarks, and breathtaking viewpoints. Private tours with flexible routes.",
-    url: "https://www.golfcolortour.com/",
+    url: "https://www.kmhillsadventures.com/",
     siteName: "Golf Color Tour",
     locale: "en_US",
     alternateLocale: ["pt_PT", "es_ES", "fr_FR", "de_DE"],
     type: "website",
     images: [
       {
-        url: "https://www.golfcolortour.com/img/general/generallogo.png",
+        url: "https://www.kmhillsadventures.com/img/general/generallogo.png",
         width: 1200,
         height: 630,
         alt: "Golf Color Tour Tuk Tuk exploring historic Lisbon streets with tourists",
         type: "image/jpeg",
       },
       {
-        url: "https://www.golfcolortour.com/img/general/generallogo.png",
+        url: "https://www.kmhillsadventures.com/img/general/generallogo.png",
         width: 1200,
         height: 1200,
         alt: "Golf Color Tour Tuk Tuk in front of Lisbon landmarks",
@@ -124,7 +124,7 @@ export const metadata = {
       "Explore Lisbon's charm with authentic Tuk Tuk experiences. Private tours, expert guides, unforgettable memories. Book now!",
     images: [
       {
-        url: "https://www.golfcolortour.com/img/general/generallogo.png",
+        url: "https://www.kmhillsadventures.com/img/general/generallogo.png",
         alt: "Golf Color Tour Tuk Tuk in Lisbon",
       },
     ],
