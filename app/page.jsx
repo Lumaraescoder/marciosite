@@ -77,7 +77,7 @@ export const metadata = {
   // INFORMAÇÕES DO APP
   applicationName: "Golf Color Tour",
   generator: "Next.js",
-    authors: [
+  authors: [
     {
       name: "Golf Color Tour",
       url: "https://www.kmhillsadventures.com", // CORRIGIDO
