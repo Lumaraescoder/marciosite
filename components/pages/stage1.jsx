@@ -8,68 +8,9 @@ import { LanguageProvider } from "../../hooks/useLang";
 function Stage1PersonalInfoContent({ onSuccess, bookingData }) {
   const { t } = useTranslation();
   const [state, handleSubmit] = useForm("xbdqklov");
-  const [formErrors, setFormErrors] = useState({});
-  const [touched, setTouched] = useState({});
   const [isSubmitting, setIsSubmitting] = useState(false);
 
-  // Validação com useCallback para evitar recriação desnecessária
-  const validateField = useCallback(
-    (name, value) => {
-      const errors = {};
-
-      switch (name) {
-        case "email":
-          if (value && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value)) {
-            errors.email = t("validation_valid_email");
-          }
-          break;
-
-        case "phone":
-          const phoneDigits = value.replace(/\s/g, "");
-          if (value && !/^[\d\s\-\+\(\)]{10,}$/.test(phoneDigits)) {
-            errors.phone = t("validation_valid_phone");
-          }
-          break;
-
-        case "fullName":
-          if (value && value.trim().split(/\s+/).length < 2) {
-            errors.fullName = t("validation_first_last_name");
-          }
-          break;
-
-        default:
-          break;
-      }
-
-      return errors;
-    },
-    [t],
-  );
-
-  const handleBlur = useCallback(
-    (fieldName) => (e) => {
-      setTouched((prev) => ({ ...prev, [fieldName]: true }));
-      const errors = validateField(fieldName, e.target.value);
-      setFormErrors((prev) => ({ ...prev, ...errors }));
-    },
-    [validateField],
-  );
-
-  const handleChange = useCallback(
-    (fieldName) => (e) => {
-      const errors = validateField(fieldName, e.target.value);
-      setFormErrors((prev) => {
-        const updated = { ...prev };
-        if (Object.keys(errors).length === 0) {
-          delete updated[fieldName];
-        } else {
-          Object.assign(updated, errors);
-        }
-        return updated;
-      });
-    },
-    [validateField],
-  );
+  // Client-side validations removed per request — allow empty submits
 
   // Função segura para salvar no localStorage
   const safeLocalStorageSave = useCallback((key, data) => {
@@ -84,88 +25,30 @@ function Stage1PersonalInfoContent({ onSuccess, bookingData }) {
     return false;
   }, []);
 
-  // Main submit function com tratamento robusto de erros
+  // Simplified submit: allow empty fields and submit directly
   const handleFormSubmit = async (event) => {
     event.preventDefault();
 
-    // Previne múltiplos submits simultâneos
-    if (isSubmitting) {
-      return;
-    }
-
+    if (isSubmitting) return;
     setIsSubmitting(true);
 
     try {
-      // Final validation before submit
       const formData = new FormData(event.target);
-      const finalErrors = {};
+      const fullName = formData.get("fullName")?.trim() || "";
+      const nameParts = fullName.split(/\s+/).filter(Boolean);
 
-      const email = formData.get("email")?.trim();
-      const phone = formData.get("phone")?.trim();
-      const fullName = formData.get("fullName")?.trim();
-
-      // Required field checks
-      if (!email) {
-        finalErrors.email = t("validation_email_required");
-      } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
-        finalErrors.email = t("validation_valid_email");
-      }
-
-      if (!phone) {
-        finalErrors.phone = t("validation_phone_required");
-      }
-
-      if (!fullName) {
-        finalErrors.fullName = t("validation_name_required");
-      } else if (fullName.split(/\s+/).length < 2) {
-        finalErrors.fullName = t("validation_first_last_name");
-      }
-
-      if (Object.keys(finalErrors).length > 0) {
-        setFormErrors(finalErrors);
-        setTouched(
-          Object.keys(finalErrors).reduce(
-            (acc, key) => ({ ...acc, [key]: true }),
-            {},
-          ),
-        );
-
-        // Smooth scroll to first error - versão segura
-        setTimeout(() => {
-          const firstError = Object.keys(finalErrors)[0];
-          const element = document.querySelector(`[name="${firstError}"]`);
-          if (element) {
-            element.scrollIntoView({
-              behavior: "smooth",
-              block: "center",
-            });
-          }
-        }, 100);
-
-        setIsSubmitting(false);
-        return;
-      }
-
-      // Get form data
-      const nameParts = fullName.split(/\s+/);
       const customerData = {
         firstName: nameParts[0] || "",
         lastName: nameParts.slice(1).join(" ") || "",
-        email: email,
-        phone: phone,
+        email: formData.get("email")?.trim() || "",
+        phone: formData.get("phone")?.trim() || "",
       };
 
-      // Save to localStorage for confirmation email (non-blocking)
       safeLocalStorageSave("customerData", customerData);
-
-      // Submit to Formspree
       await handleSubmit(event);
     } catch (error) {
       console.error("Erro no envio do formulário:", error);
-      setFormErrors({
-        submit:
-          "Ocorreu um erro ao enviar o formulário. Por favor, tente novamente.",
-      });
+    } finally {
       setIsSubmitting(false);
     }
   };
@@ -249,78 +132,40 @@ function Stage1PersonalInfoContent({ onSuccess, bookingData }) {
         {/* Full Name */}
         <div className="col-12">
           <div className="form-input">
-            <input
-              type="text"
-              name="fullName"
-              required
-              onBlur={handleBlur("fullName")}
-              onChange={handleChange("fullName")}
-              className={
-                touched.fullName && formErrors.fullName ? "error-field" : ""
-              }
-              disabled={isSubmitting}
-            />
+            <input type="text" name="fullName" disabled={isSubmitting} />
             <label className="lh-1 text-16 text-light-1">
               {t("stage1_full_name")}
             </label>
           </div>
-          {touched.fullName && formErrors.fullName && (
-            <div className="error-message">{formErrors.fullName}</div>
-          )}
+         
         </div>
 
         {/* Email */}
         <div className="col-md-6">
           <div className="form-input">
-            <input
-              type="email"
-              name="email"
-              required
-              onBlur={handleBlur("email")}
-              onChange={handleChange("email")}
-              className={touched.email && formErrors.email ? "error-field" : ""}
-              disabled={isSubmitting}
-            />
+            <input type="email" name="email" disabled={isSubmitting} />
             <label className="lh-1 text-16 text-light-1">
               {t("stage1_email")}
             </label>
           </div>
-          {touched.email && formErrors.email && (
-            <div className="error-message">{formErrors.email}</div>
-          )}
           <ValidationError prefix="Email" field="email" errors={state.errors} />
         </div>
 
         {/* Phone */}
         <div className="col-md-6">
           <div className="form-input">
-            <input
-              type="text"
-              name="phone"
-              required
-              onBlur={handleBlur("phone")}
-              onChange={handleChange("phone")}
-              className={touched.phone && formErrors.phone ? "error-field" : ""}
-              disabled={isSubmitting}
-            />
+            <input type="text" name="phone" disabled={isSubmitting} />
             <label className="lh-1 text-16 text-light-1">
               {t("stage1_phone")}
             </label>
           </div>
-          {touched.phone && formErrors.phone && (
-            <div className="error-message">{formErrors.phone}</div>
-          )}
+        
         </div>
 
         {/* Country */}
         <div className="col-md-6">
           <div className="form-input">
-            <input
-              type="text"
-              name="country"
-              required
-              disabled={isSubmitting}
-            />
+            <input type="text" name="country" disabled={isSubmitting} />
             <label className="lh-1 text-16 text-light-1">
               {t("stage1_country")}
             </label>
@@ -330,7 +175,7 @@ function Stage1PersonalInfoContent({ onSuccess, bookingData }) {
         {/* City */}
         <div className="col-md-6">
           <div className="form-input">
-            <input type="text" name="city" required disabled={isSubmitting} />
+            <input type="text" name="city" disabled={isSubmitting} />
             <label className="lh-1 text-16 text-light-1">
               {t("stage1_city")}
             </label>
@@ -340,12 +185,7 @@ function Stage1PersonalInfoContent({ onSuccess, bookingData }) {
         {/* Address */}
         <div className="col-12">
           <div className="form-input">
-            <input
-              type="text"
-              name="address"
-              required
-              disabled={isSubmitting}
-            />
+            <input type="text" name="address" disabled={isSubmitting} />
             <label className="lh-1 text-16 text-light-1">
               {t("stage1_address")}
             </label>
@@ -355,24 +195,13 @@ function Stage1PersonalInfoContent({ onSuccess, bookingData }) {
         {/* Tour Content */}
         <div className="col-12">
           <div className="form-input">
-            <textarea
-              name="tourContent"
-              required
-              rows="8"
-              disabled={isSubmitting}
-            ></textarea>
+            <textarea name="tourContent" rows="8" disabled={isSubmitting}></textarea>
             <label className="lh-1 text-16 text-light-1">
               {t("stage1_tour_content")}
             </label>
           </div>
         </div>
-
-        {/* Erro geral de submit */}
-        {formErrors.submit && (
-          <div className="col-12">
-            <div className="error-message">{formErrors.submit}</div>
-          </div>
-        )}
+        
 
         {/* SUBMIT BUTTON */}
         <div className="col-12">
